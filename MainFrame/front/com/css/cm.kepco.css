@@ -1,0 +1,1449 @@
+@charset "utf-8";
+
+/****************************************/
+/*	Name: KEPCO
+/*	PART: SITE COMMON STYLE
+/*	Version: 1.0
+/*	Author: 성美™
+/****************************************/
+ 
+/* text link */
+a.link {color:#1D69A3; text-decoration:underline;}
+iframe{margin:0,padding:0}
+#mainFrame
+{position:absolute;top:0;left:0}
+/**** CONTENT ****/
+/* MARGE ＆ PADDING */
+.conSection {margin-bottom:38px;}
+.conSection .scbox {margin-bottom:43px;}
+.conSection .btn_bbs {margin-bottom:-14px;}
+.conSection .comment {margin-bottom:-19px;}
+.conSection .comment.type02 {margin-bottom:19px;} 
+.conSection .comment.type03 {margin-bottom:25px;}
+.conSection .member {}_
+.conSection .member.no {margin-top:-24px;}
+.conSection .btn_file {margin:20px 0 -20px;}
+
+
+
+.conSection2 {margin-bottom:38px;}
+.conSection2 .scbox {margin-bottom:43px;}
+.conSection2 .btn_bbs {margin-bottom:-14px;}
+.conSection2 .comment {margin-bottom:-19px;}
+.conSection2 .comment.type02 {margin-bottom:19px;} 
+.conSection2 .comment.type03 {margin-bottom:15px;}
+.conSection2 .member {}_
+.conSection2 .member.no {margin-top:15px;}
+.conSection2 .btn_file {margin:20px 0 -20px;}
+
+
+.conSection2 {margin-bottom:15px;}
+
+
+.td_cont > .btn_file.btnS {margin:0px;} /* 2013.01.31 | 김미선 추가 | 테이블내에 .btn_file margin 초기화시키기 위함. */
+.td_cont > .btn_file.btnS a {margin-bottom:0px;}
+.none{display:none}
+.td_cont input[type="password"] {margin-right:5px;} /* 2013.02.13 | 박현아 | 패스워드 인풋 오른쪽 여백 */
+.conSection .txt_dsc {margin:-5px 0 15px; line-height:22px;}
+.conSection li > p.txt_dsc {margin-top:0;} /* 2013.04.23 | 김미선 | 약관 리스트 li 내 p.txt_dsc margin-top:-5px 값 초기화 */
+.wrap_table.bul_table {margin-top:-10px;}
+.wrap_table.marg_type01 {margin-bottom:20px;} /* [테이블+내용]+테이블 일때 간격  */
+.wrap_table.marg_type02 {margin-bottom:0px !important;} /* 2013.04.25 | 김미선 | conSection 안에 wrap_table.marg_type02가 올 경우 margin-bottom:0px; */
+
+/**** TITLE.BULLET ****/
+/* title */
+.h2tit {font-size:18px; font-family:Malgun Gothic, dotum; font-weight:bold; color:#1479c7; letter-spacing:-1px; margin-bottom:20px;}
+.h2tit.tit {margin-bottom:29px;}
+.h2tit.pointGy {color:#454545; font-size:16px;}
+.h3tit {background:url(/front/img/com/ico_h3tit.png) 0 2px no-repeat; padding-left:15px; margin-bottom:18px; font-size:14px; font-family:dotum; font-weight:bold; color:#1479c7; letter-spacing:-1px;}
+.h3tit .txt {margin-left:5px; font-size:12px; color:#454545; font-weight:normal;}
+.h3tit.pointGy {background:none; padding:0; font-size:12px; color:#454545;}
+.h4tit {background:url(/front/img/com/ico_h4tit.png) 0 4px no-repeat; padding-left:8px; margin-bottom:19px; font-size:12px; font-family:dotum; font-weight:bold; color:#606060; letter-spacing:-1px;}
+
+/* bullet list */
+/* 타이틀 성으로 들어갔을 경우 사용 */
+.bul_3dep_list.tit, .bul_4dep_list.tit, .bul_5dep_list.tit,.bul_6dep_list.tit, .h3tit.bul.tit, .h4tit.bul.tit,.h3tit.bul.tit,.h4tit.bul.tit,.h5tit.bul.tit,.h6tit.bul.tit {margin-top:-6px;}
+/* li안에 블릿이 순서대로 들어갔을 경우 간격조정 */
+.bul_3dep_list, .bul_4dep_list, .bul_5dep_list, .bul_6dep_list {margin-bottom:15px;}
+.bul_3dep_list .bul_4dep_list,
+.bul_3dep_list .bul_4dep_list .bul_5dep_list,
+.bul_3dep_list .bul_4dep_list .bul_5dep_list, .bul_6dep_list {margin-top:4px; margin-bottom:4px;}
+.bul_4dep_list.type02, .bul_5dep_list.type02, .bul_6dep_list.type02, .h3tit.bul.type02, .h4tit.bul.type02, .h5tit.bul.type02, .h6tit.bul.type02, .conSection .txt_dsc.type02 {margin-left:15px;}
+.bul_5dep_list.type03, .bul_6dep_list.type03, .bul_6dep_list.type03, .h5tit.bul.type03, .h6tit.bul.type03, .conSection .txt_dsc.type03 {margin-left:25px;}
+.bul_6dep_list.type04, .h6tit.bul.type04, .conSection .txt_dsc.type04 {margin-left:35px;}
+.bul_3dep_list li .bul_4dep_list {background: #fff; padding-left: 15px; margin-left: -15px;}/* 2013.03.19 l 조성미 임시추가 l 블릿체계가 변경되기전 마크업과 충돌  */
+
+/* 2013.02.27 ㅣ조성미 추가ㅣ 블릿체계 추가 */
+span.h3tit.bul,span.h4tit.bul,span.h5tit.bul,span.h6tit.bul {display:inline-block;}
+.h3tit.bul,.h4tit.bul,.h5tit.bul,.h6tit.bul {margin:5px 0; font-size:12px; font-weight:normal; line-height:22px; letter-spacing:0; color:#454545;}
+.h3tit.bul {background:url(/front/img/com/bul_squ3_list.png) 0 6px no-repeat; padding-left:14px; margin:10px 0 0;}
+.h4tit.bul {background:url(/front/img/com/bul_squ4_list.png) 0 8px no-repeat; padding-left:9px;}
+.h5tit.bul {background:url(/front/img/com/bul_squ5_list.png) 0 8px no-repeat; padding-left:8px; color:#606060;}
+.h6tit.bul {background:url(/front/img/com/bul_squ6_list.png) 0 9px no-repeat; padding-left:9px; color:#606060;}
+/* 각 depth별 bullet */
+.bul_3dep_list>li,
+.bul_4dep_list>li,
+.bul_5dep_list>li,
+.bul_6dep_list>li {line-height:22px; color:#454545;}
+.bul_3dep_list>li {background:url(/front/img/com/bul_squ3_list.png) 0 6px no-repeat; padding-left:14px;}
+.bul_4dep_list>li {background:url(/front/img/com/bul_squ4_list.png) 0 8px no-repeat; padding-left:9px;}
+.bul_5dep_list>li {background:url(/front/img/com/bul_squ5_list.png) 0 8px no-repeat; padding-left:8px; color:#606060;}
+.bul_6dep_list>li {background:url(/front/img/com/bul_squ6_list.png) 0 9px no-repeat; padding-left:9px; color:#606060;}
+/* li안에 컨텐츠가 들어갔을경우(이미지박스,테이블) */
+.bul_3dep_list .img_box,
+.bul_3dep_list .wrap_table,
+.bul_3dep_list .box_info.type2 {margin: 0 0 10px -14px;}
+.bul_4dep_list .img_box,
+.bul_5dep_list .img_box,
+.bul_4dep_list .wrap_table,
+.bul_5dep_list .wrap_table,
+.bul_4dep_list .box_info.type2,
+.bul_5dep_list .box_info.type2 {margin: 0 0 10px -24px;}
+.bul_3dep_list .bul_4dep_list .box_info.type2,
+.bul_4dep_list .bul_5dep_list .box_info.type2,
+.bul_3dep_list .bul_4dep_list .wrap_table,
+.bul_4dep_list .bul_5dep_list .wrap_table {margin: 0 0 10px -25px;} 
+.bul_3dep_list .bul_4dep_list .bul_5dep_list .box_info.type2 {margin: 0 0 10px -45px;}
+.bul_3dep_list .bul_4dep_list .bul_5dep_list .wrap_table {margin: 0 0 10px -45px;}
+/* 2013.03.12 l 조성미 추가 l 블릿리스트가 클래스 ol_dep을 가지고 있을경우  */
+.bul_3dep_list.ol_dep .img_box,
+.bul_3dep_list.ol_dep .wrap_table,
+.bul_3dep_list.ol_dep .box_info.type2 {margin: 0 0 10px -14px;}
+.bul_4dep_list.ol_dep .img_box,
+.bul_5dep_list.ol_dep .img_box,
+.bul_4dep_list.ol_dep .wrap_table,
+.bul_5dep_list.ol_dep .wrap_table,
+.bul_4dep_list.ol_dep .box_info.type2,
+.bul_5dep_list.ol_dep .box_info.type2,
+.bul_3dep_list.ol_dep .bul_4dep_list .box_info.type2,
+.bul_4dep_list.ol_dep .bul_5dep_list .box_info.type2,
+.bul_3dep_list.ol_dep .bul_4dep_list .wrap_table,
+.bul_4dep_list.ol_dep .bul_5dep_list .wrap_table,
+.bul_3dep_list.ol_dep .bul_4dep_list .bul_5dep_list .box_info.type2,
+.bul_3dep_list.ol_dep .bul_4dep_list .bul_5dep_list .wrap_table
+.bul_3dep_list .bul_4dep_list.ol_dep .box_info.type2,
+.bul_4dep_list .bul_5dep_list.ol_dep .box_info.type2,
+.bul_3dep_list .bul_4dep_list.ol_dep .wrap_table,
+.bul_4dep_list .bul_5dep_list.ol_dep .wrap_table,
+.bul_3dep_list .bul_4dep_list.ol_dep .bul_5dep_list .box_info.type2,
+.bul_3dep_list .bul_4dep_list.ol_dep .bul_5dep_list .wrap_table {margin-left:0;}
+/* 순서 리스트일 경우 숫자가 사용될때 background와padding해제 */
+.h3tit.bul.ol_dep,
+.h4tit.bul.ol_dep,
+.h5tit.bul.ol_dep,
+.h6tit.bul.ol_dep,
+ol.bul_3dep_list.ol_dep>li,
+ol.bul_4dep_list.ol_dep>li,
+ol.bul_5dep_list.ol_dep>li,
+ol.bul_6dep_list.ol_dep>li {background:none;}
+/**/
+.ol_dep>li {padding-left:15px; text-indent:-15px;}
+.ol_dep>li>ul, .ol_dep>li>ol, .ol_dep>li> .txt_dsc {text-indent:0;}
+/* 기타 */
+.bul_3dep_list .wrap_table table.table_list thead tr th span,
+.bul_4dep_list .wrap_table table.table_list thead tr th span,
+.bul_5dep_list .wrap_table table.table_list thead tr th span {text-align:center;}
+
+.h3tit.bul.has_btn, 
+.h4tit.bul.has_btn,
+.h3tit.bul.has_btn,
+.h4tit.bul.has_btn,
+.h5tit.bul.has_btn,
+.h6tit.bul.has_btn {padding-top:10px; background-position:0 16px;}
+.bul_3dep_list.has_btn>li,
+.bul_4dep_list.has_btn>li,
+.bul_5dep_list.has_btn>li {padding-top:10px; background-position: 0 20px;}
+.bul_4dep_list.has_btn>li:first-child,
+.bul_5dep_list.has_btn>li:first-child {padding-top:0; background-position:0 10px;}
+.bul_4dep_list.bul_comment,
+.bul_5dep_list.bul_comment {margin-top:20px;}
+.bul_3dep_list.bul_comment>li.btn_file.btnS {margin:0 0 10px 0; background-position:0 9px;}
+.bul_4dep_list.bul_comment>li.btn_file.btnS,
+.bul_5dep_list.bul_comment>li.btn_file.btnS {margin:0 0 4px 0; background-position:0 9px;}
+.bul_4dep_list.bul_comment>li.btn_file.btnS a span strong,
+.bul_5dep_list.bul_comment>li.btn_file.btnS a span strong {text-indent:0; line-height:22px;}
+.bul_5dep_list .btn_set {text-indent:0;}
+.bul_box {margin-top:20px;}
+/* 폰트 강조 */
+.imp2dep, .h5tit.bul.imp2dep {font-weight:bold;}
+.imp3dep {font-weight:bold; color:#e93444;}
+/* checkbox,radio 선택하는 경우 */
+.kind_list {width:100%; *zoom:1;}
+.kind_list:after {display:block; content:""; clear:both;}
+/* 2013.04.13 ㅣ조성미 수정ㅣ 간격 맞추기 위해 수정 */
+.kind_list li {float:left; line-height:20px;}
+.kind_list:first-child li {padding-bottom:0;}
+.kind_list li input {margin-right:0;} 
+/* .kind_list li {float:left; line-height:20px;}
+.kind_list:first-child li {margin-bottom:5px;}
+.kind_list li input {margin-right:5px;} */
+.kind_list li label {margin-right:19px;}
+.kind_list.license li {width:45%;} /* 2013.03.10 ㅣ조성미 추가ㅣ 넓이가 균등균할 */
+/* 2013.03.10 ㅣ조성미 추가ㅣ 블릿형태의 float 컨텐츠 */
+.bul_5dep_list.kind_list {margin:5px 0 0;}
+.bul_5dep_list.kind_list li {background-position:0 15px; margin:0 20px 0 0;}
+.bul_5dep_list.kind_list li label {margin-right:0;}
+/* 2013.02.21ㅣ조성미추가ㅣcheckbox,radio 리스트 경우 */
+.kind_list.type02 li {float:none; padding-left:20px;}
+.kind_list.type02 li input {margin:0 0 0 -20px;}
+.kind_list.type02 li label {margin-right:0;}
+/* 체크박스와 링크 리스트 배경라인이 있음 */
+.kind_etc {width:100%; zoom:1;}
+.kind_etc:after {content:""; display:block; clear:both;}
+.kind_etc li {float:left; background:url(/front/img/com/bul_bar_d6.gif) 0 2px no-repeat; padding-left:6px; margin-left:10px; font-size:11px;}
+.kind_etc li:first-child {background:none; padding-left:0; margin-left:0;}
+.kind_etc li label {vertical-align:middle;}
+/* 내용을 분리하는 마크업 */
+.dotline_box {background:url(/front/img/bg_dotline.png) 0 100% repeat-x; width:100%; margin-bottom:10px;}
+.dotline_box:after {content:""; display:block; clear:both;}
+.dotline_box .inner_box {background:url(/front/img/bg_dotline.png) 0 100% repeat-x; padding:10px 0;}
+.dotline_box .inner_box .bul_4dep_list {margin-bottom:0px;}
+/* 리스트 타입 */
+.ui_split {*zoom:1; position:relative;}
+.ui_split:after {display:block; content:""; height:0px; clear:both; visibility:hidden;}
+.ui_split>li:first-child,
+.ui_split.row>li:first-child,
+.ui_split.step>li:first-child {background:none;}
+.ui_split li {position:relative;display:block;}
+.row>li{padding:10px; background:url(/front/img/bg_dotline.png) repeat-x 0 0;}
+.step>li {padding:10px; /* background:url(/front/img/bg_dotline2.png) repeat-y 0 0; */}
+.col2>li,
+.col3>li {float:left;}
+/*  균등분할 */
+.col2, .col3 {width:100%; zoom:1;}
+.col2:after, .col3:after {content:""; display:block; clear:both;}
+.col2>li {width:50%;}/* 균등분할 */
+.col3>li {width:33%;}/* 균등분할 */
+.col3>li:first-child {width:34%;}
+.bul_4dep_list.col2,
+.bul_4dep_list.col3 {overflow:hidden;}
+.bul_4dep_list.col2 li {width:48%;}/* 균등분할 */
+.bul_4dep_list.col3 li {width:31%;}/* 균등분할 */
+.block_a {/*width:40% ;*/}/* 커스터마이징 */
+.block_b {/*width:60% ;*/}/* 커스터마이징 */
+.bul_4dep_list.col2 .block_a,
+.bul_4dep_list.col2 .block_c {/*width:60% ;*/}/* 커스터마이징 */
+.bul_4dep_list.col2 .block_b,
+.bul_4dep_list.col2 .block_d {/*width:auto ;*/}/* 커스터마이징 */
+.ui_split.basic {width:100%; margin:0 0 3px 0; zoom:1;}
+.ui_split.basic:after {content:""; display:block; clear:both;}
+.ui_split.basic dt,
+.ui_split.basic dd {float:left; margin:0 0 40px 0;}
+.ui_split.basic dt {clear:left; width:210px; margin-right:40px; font-family:Malgun Gothic,dotum; letter-spacing:-0.1em; font-size:17px; line-height:140%;}
+.ui_split.basic dt span {color:#1479c7;}
+.ui_split.basic dd {width:490px;}
+.ui_split.basic dd .bul_3dep_list {margin:0;}
+
+
+/* 버튼 정렬 */
+.btnC {text-align:center;}
+.btnC a {margin:0 3px;}
+.btnR {text-align:right;}
+.btnR a {margin-left:6px;}
+.btnL {text-align:left;}
+.btnL a {margin-right:6px;}
+
+/* 상하단 정렬*/
+.board_align {width:100%; *zoom:1; margin-bottom:10px;}
+.board_align:after {display:block; content:""; height:0px; clear:both; visibility:hidden;}
+.board_align.txt_table_info {margin-bottom:0;}
+.board_align .area_right .txt_table_info {padding-bottom:7px;}
+.area_left {float:left;}
+.area_left .num {font-weight:bold;}
+.area_left.btn_file {margin-top:20px;} /* 2013.02.06 ㅣ 조성미 추가 ㅣ 하단 왼쪽에오는 파일버튼 margin값 추가 */
+.area_right {float:right; text-align:right;} /* 2013.02.04 | 박현아 수정 | 오른쪽 정렬 추가 */
+.area_right .comment {margin:0;}
+.area_right span.ico_notice {display:inline-block;}/* 2013.03.29 l조성미 추가l 상단 주석과 정렬박스가 같이 있을경우 블럭해제 */
+/* 2013.02.04 ㅣ 조성미추가 ㅣ table정렬일경우 넓이지정함 */
+.board_align.pos_table .area_left {width:48%;}
+.board_align.pos_table .area_right {width:48%; text-align:left;}
+
+/* 아이콘정의 */
+/* 일반형 */
+.ico_set .ico_img {background-position:-6px -70px;}
+.ico_set .ico_pdf {background-position:-6px -170px;}
+.ico_set .ico_ppt {background-position:-6px -270px;}
+.ico_set .ico_pptx {background-position:-6px -270px;}
+.ico_set .ico_hwp {background-position:-6px -370px;}
+.ico_set .ico_excel {background-position:-6px -470px;}
+.ico_set .ico_xls {background-position:-6px -470px;}
+.ico_set .ico_xlsx {background-position:-6px -470px;}
+.ico_set .ico_word {background-position:-6px -570px;}
+.ico_set .ico_doc {background-position:-6px -570px;}
+.ico_set .ico_docs {background-position:-6px -570px;}
+.ico_set .ico_secret {background-position:-6px -770px;}
+.ico_set .ico_dodument {background-position:-6px -970px;}
+.ico_set .ico_rss {background-position:-6px -1070px;}
+.ico_set .ico_bookmark {background-position:-6px -1170px;}
+.ico_set .ico_down {background-position:-6px -1270px;}
+.ico_set .ico_print {background-position:-6px -1370px;}
+.ico_set .ico_email {background-position:-6px -1470px;}
+.ico_set .ico_ebook {background-position:-6px -2172px;}
+.ico_set .ico_hview {background-position:-6px -2271px;}
+.ico_set .ico_zip {background-position:-6px -2569px;}
+.ico_set .ico_etc {background-position:-6px -3281px;}
+.ico_set .ico_calendar {background-position:-6px -1972px; width:22px; height:22px;}
+/* 2013.02.12 ㅣ조성미 추가ㅣ 버튼같은 아이콘 추가 */
+.ico_set .ico_txt {background:url(/front/img/com/btn_set.png) 0 -534px no-repeat; width:auto; height:20px; padding-left:5px;}
+.ico_set .ico_txt strong {display:inline-block; background:url(/front/img/com/btn_set.png) 100% -534px no-repeat; width:auto; height:20px; padding-right:5px; font-size:12px; line-height:18px; color:#1c69a1;}
+.ico_set span,
+.ico_set a {display:inline-block; background:url(/front/img/com/btn_icon_file.png) no-repeat; width:16px; height:16px; height:21px; text-align:left; color:#353535; font-size:12px; font-family:Malgun Gothic,dotum; letter-spacing:0px; vertical-align:middle;}
+.ico_set span strong,
+.ico_set a span {display:block; height: 0; width: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; overflow:hidden;}
+/* 버튼형 아이콘 */
+.ico_file {padding:12px 20px;}
+.ico_file a {background:url(/front/img/com/bg_line_fff.png) left center no-repeat; padding-left:10px; margin-left:7px;}
+.ico_file a:first-child {background:none; padding-left:0; margin-left:0;}
+.ico_file span {display:inline-block; background:url(/front/img/com/btn_icon_file.png) no-repeat; padding-left:23px; text-align:left; color:#353535; font-size:12px; text-decoration:underline; letter-spacing:0px; line-height:18px; cursor:pointer;}
+.ico_file.type02 {padding:0 0 12px;}
+.ico_file.type02 a {background:none; margin-left:0;}
+.ico_file a.ico_img span {background-position:-7px -71px;}
+.ico_file a.ico_pdf span {background-position:-7px -171px;}
+.ico_file a.ico_ppt span {background-position:-7px -271px;}
+.ico_file a.ico_pptx span {background-position:-7px -271px;}
+.ico_file a.ico_hwp span {background-position:-7px -371px;}
+.ico_file a.ico_excel span {background-position:-7px -471px;}
+.ico_file a.ico_xls span {background-position:-7px -471px;}
+.ico_file a.ico_xlsx span {background-position:-7px -471px;}
+.ico_file a.ico_word span {background-position:-7px -571px;}
+.ico_file a.ico_doc span {background-position:-7px -571px;}
+.ico_file a.ico_docx span {background-position:-7px -571px;}
+.ico_file a.ico_secret span {background-position:-7px -771px;}
+.ico_file a.ico_dodument span {background-position:-7px -971px;}
+.ico_file a.ico_rss {background-position:-7px -1071px;}
+.ico_file a.ico_bookmark {background-position:-7px -1171px;}
+.ico_file a.ico_down {background-position:-7px -1271px;}
+.ico_file a.ico_print {background-position:-7px -1371px;}
+.ico_file a.ico_email {background-position:-7px -1471px;}
+.ico_file a.ico_hview {background-position:-7px -2271px;}
+.ico_file a.ico_zip span {background-position:-6px -2569px;}
+.ico_file a.ico_modify span {background-position:-6px -1571px; width:auto; height:auto;}
+.ico_file a.ico_del span {background-position:-6px -1671px; width:auto; height:auto;}
+.ico_file a span.ico_del {background:url(/front/img/com/btn_icon_file.png) -6px -1671px no-repeat; padding:0; width:15px; height:16px; vertical-align:middle;}
+.ico_file a.ico_etc span {background-position:-3px -3281px;}
+/* 기타 아이콘 */
+a.ico_reply {background:url(/front/img/com/btn_icon_file.png) -6px -671px no-repeat; margin-left:10px; padding-left:29px;}
+a.ico_modify span,
+a.ico_del span,
+a span.ico_secret,
+a span.ico_dvpop,
+a span.ico_dvpcall {display:inline-block; background:url(/front/img/com/btn_icon_file.png) no-repeat; width:15px; height:16px; vertical-align:middle; cursor:pointer;}
+a.ico_direct {display:inline-block; background:url(/front/img/com/btn_direct.png) right 3px no-repeat; vertical-align:middle;}
+a.ico_direct span {display:block; padding-right:8px; font-size:11px; letter-spacing:-1px; text-decoration:underline;}
+a.ico_modify span {background-position:-6px -1570px;}
+a.ico_del span {background-position:-6px -1670px;}
+a span.ico_secret {background-position:-6px -770px; height:15px;}
+a span.ico_dvpop {background-position:-6px -1772px; height:18px; margin-left:4px;}
+a span.ico_dvpcall {background-position:-6px -3180px; height:18px; margin-left:4px;}
+a.ico_top {display:inline-block; background:url(/front/img/com/btn_icon_file.png) -6px -2072px no-repeat; width:30px; height:26px; vertical-align:middle;}
+a.ico_jpg02 {display:inline-block; background:url(/front/img/com/btn_icon_file.png) no-repeat -6px -2871px; width:28px; height:24px; vertical-align:middle;}
+a.ico_ai02 {display:inline-block; background:url(/front/img/com/btn_icon_file.png) no-repeat -6px -2976px; width:28px; height:24px; vertical-align:middle;}
+a.ico_han {display:inline-block; background:url(/front/img/com/btn_icon_file.png) no-repeat -6px -3386px; width:28px; height: 24px; vertical-align:middle;}
+/* 04.15 공통 버튼 */
+a.ico_pdf02 {display:inline-block; background:url(/front/img/com/btn_icon_file.png) no-repeat -6px -3499px; width:28px; height:24px; vertical-align: middle;}
+/* 버튼 */
+a.btn_set {display:inline-block; background:url(/front/img/com/btn_set.png) no-repeat; padding-left:20px; margin:0 1px; font-family:Malgun Gothic,dotum; letter-spacing:-1px; font-weight:bold; text-align:center; vertical-align:middle;}
+a.btn_set span {display:inline-block; background:#fff  url(/front/img/com/btn_set.png) no-repeat; padding-right:20px; letter-spacing:-1px; cursor:pointer;}
+a.btn_set.btnRe {background-position:0 0;}
+a.btn_set.btnRe span {background-position:100% 0; color:#ffffff;}
+a.btn_set.btnGy {background-position:0 -38px;}
+a.btn_set.btnGy span {background-position:100% -38px; color:#ffffff;}
+a.btn_set.btnWh {background-position:0 -76px;}
+a.btn_set.btnWh span {background-position:100% -76px; color:#353535;}
+a.btn_set.btnRe.goto {background-position:0 -114px;}
+a.btn_set.btnRe.goto span {background-position:100% -114px; padding-right:30px;}
+a.btn_set.btnWh.goto {background-position:0 -762px;}
+a.btn_set.btnWh.goto span {background-position:100% -762px; padding-right:32px;}
+/* 콘텐츠 버튼,연계버튼(btnS_go) */
+a.btn_set.btnSv {background-position:0 -152px; padding-left:10px; font-weight:normal; font-family:dotum;}
+a.btn_set.btnSv span {background-position:100% -152px; height:22px; padding-right:10px; color:#545454; font-size:11px; line-height:23px; }
+:root a.btn_set.btnSv span { line-height:25px \0/IE9;}  /* IE9 */
+a.btn_set.btnSv.goto {background-position:0 -179px;}
+a.btn_set.btnSv.goto span {background-position:100% -179px; padding-right:19px;}
+a.btn_set.btnRe.goto2 {background-position:0 -800px; padding-left:10px; font-weight:normal; font-family:dotum;}
+a.btn_set.btnRe.goto2 span {background-position:100% -800px; height:22px; padding-right:19px; color:#ffffff; font-size:11px; line-height:24px; }/*04.12버튼 ei 가운데 정렬위한 수정*/
+a.btn_set.goto3 {background-position:0 -1011px; padding-left:10px; font-weight:normal; font-family:dotum;}
+a.btn_set.goto3 span {background-position:100% -1011px; height:22px; padding-right:18px; color:#545454; font-size:11px; line-height:24px;}
+a.btn_set.goto4 {background-position:0 -1038px; padding-left:10px; font-weight:normal; font-family:dotum;}
+a.btn_set.goto4 span {background-position:100% -1038px; height:22px; padding-right:18px; color:#fff; font-size:11px; line-height:24px;}
+/* 2013.03.06 l조성미 추가l 버튼type(현재는 요금계산만 사용) */
+a.btn_set.btnBe {background-position:0 -695px;}
+a.btn_set.btnBe span {background-position:100% -695px; color:#ffffff;}
+a.btn_set.btnBge {background-position:0 -733px;}
+a.btn_set.btnBge span {background-position:100% -733px; color:#ffffff;}
+/* 2013.03.08 l조성미 추가l 비활성화 버튼 */
+a.btn_set.btn_inacti1 {background:url(/front/img/com/board_bg.png) 0 -68px no-repeat; width:88px; height:22px; padding:0;}
+a.btn_set.btn_inacti2 {background:url(/front/img/com/board_bg.png) 0 -95px no-repeat; width:102px; height:22px; padding:0;}
+a.btn_set.btn_inacti1 span, a.btn_set.btn_inacti2 span {display:block; height: 0; width: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; overflow:hidden;}
+/* 2013.03.10 l조성미 추가l 로그인 버튼 추가 */
+.btn_bbs a.btn_set.btnRe_large {background-position:0 -559px;}
+.btn_bbs a.btn_set.btnRe_large span {background-position:100% -559px; height:63px; font-size:16px; line-height:63px; color:#fff;}
+.btn_bbs a.btn_set.btnBl_large {background-position:0 -627px;}
+.btn_bbs a.btn_set.btnBl_large span {background-position:100% -627px; height:63px; font-size:14px; line-height:63px; color:#1d69a3;}
+.btn_bbs.marg_type01 {margin-top:-30px;}/* 2013.04.30 | 김미선 | 버튼이 conSection 밖에 있을 경우 간격 조정을 위해 추가함 */
+.btn_bbs.marg_type02 {margin-bottom:0px;}/* 2013.04.30 | 김미선 | 버튼이 margin-bottom을 초기화하기 위해 추가함 */
+/* 기능 버튼 */
+.btn_file a {display:inline-block; background:url(/front/img/com/btn_set.png) 100% -323px no-repeat; margin:0 1px;}
+.btn_file a:first-child {margin-left:0;}
+.btn_file a span {display:inline-block; background:url(/front/img/com/btn_icon_file.png) 0 0 no-repeat; cursor:pointer;}
+.btn_file a span strong  {display:inline-block; background:url(/front/img/com/btn_icon_file.png) 0 -62px no-repeat; height:25px; padding:8px 10px 0 33px; text-align:left; color:#353535; font-size:12px; font-family:Malgun Gothic,dotum; font-weight:bold; letter-spacing:0px;}
+.btn_file a.ico_img strong {background-position:0 -62px;}
+.btn_file a.ico_pdf strong {background-position:0 -162px;}
+.btn_file a.ico_ppt strong {background-position:0 -262px;}
+.btn_file a.ico_hwp strong {background-position:0 -362px;}
+.btn_file a.ico_excel strong {background-position:0 -462px;}
+.btn_file a.ico_word strong {background-position:0 -562px;}
+.btn_file a.ico_secret strong {background-position:0 -762px;}
+.btn_file a.ico_dodument strong {background-position:0 -962px;}
+.btn_file a.ico_rss strong {background-position:0 -1062px;}
+.btn_file a.ico_bookmark strong {background-position:0 -1162px;}
+.btn_file a.ico_down strong {background-position:0 -1262px;}
+.btn_file a.ico_print strong {background-position:0 -1362px;}
+.btn_file a.ico_email strong {background-position:0 -1462px;}
+.btn_file a.ico_ebook strong {background-position:0 -2162px;}
+.btn_file a.ico_hview strong {background-position:0 -2262px;}
+.btn_file a.ico_iphone strong {background-position:2px -2362px;}
+.btn_file a.ico_android strong {background-position:2px -2460px;}
+.btn_file a.ico_jpg strong {background-position:1px -2660px;}
+.btn_file a.ico_ai strong {background-position:0 -2763px;}
+.btn_file a.ico_gif strong {background-position:0 -3074px;}
+/* 기능 버튼 작은사이즈 */
+.btn_file.btnS {margin-bottom:10px;}
+.btn_file.btnS a {background-position:100% -361px;}
+.btn_file.btnS a span {background-position:0 -38px;}
+.btn_file.btnS a span strong  {background-position:0 -66px; height:25px; line-height:23px; padding:0 10px 0 33px;}
+.btn_file.btnS a.ico_img strong {background-position:0 -66px;}
+.btn_file.btnS a.ico_pdf strong {background-position:0 -166px;}
+.btn_file.btnS a.ico_ppt strong {background-position:0 -266px;}
+.btn_file.btnS a.ico_hwp strong {background-position:0 -367px;}
+.btn_file.btnS a.ico_excel strong {background-position:0 -466px;}
+.btn_file.btnS a.ico_word strong {background-position:0 -566px;}
+.btn_file.btnS a.ico_secret strong {background-position:0 -766px;}
+.btn_file.btnS a.ico_dodument strong {background-position:1px -966px;}
+.btn_file.btnS a.ico_rss strong {background-position:0 -1066px;}
+.btn_file.btnS a.ico_bookmark strong {background-position:0 -1166px;}
+.btn_file.btnS a.ico_down strong {background-position:0 -1266px;}
+.btn_file.btnS a.ico_print strong {background-position:0 -1366px;}
+.btn_file.btnS a.ico_email strong {background-position:0 -1466px;}
+.btn_file.btnS a.ico_ebook strong {background-position:0 -2166px;}
+.btn_file.btnS a.ico_hview strong {background-position:0 -2267px;}
+.btn_file.btnS a.ico_iphone strong {background-position:2px -2366px;}
+.btn_file.btnS a.ico_android strong {background-position:2px -2464px;}
+.btn_file.btnS a.ico_jpg strong {background-position:1px -2665px;}
+.btn_file.btnS a.ico_ai strong {background-position:0 -2767px;}
+.btn_file.btnS a.ico_gif strong {background-position:0 -3079px;}
+/* 마크 아이콘 */
+.ico_mark {background:url(/front/img/com/ico_mark.png) no-repeat;}
+.ico_mark.info {background-position:0 0;}
+.ico_mark.pw_ch {background-position:0 -200px;}
+.ico_mark.pw_lo {background-position:0 -400px;}
+.ico_mark.step1 {background-position:0 -600px;}
+.ico_mark.step2 {background-position:0 -800px;}
+.ico_mark.notify1 {background-position:-740px 0;}
+.ico_mark.notify2 {background-position:-740px -80px;}
+.ico_mark.client {background-position:0 -1000px;}
+.ico_mark.head_office {background-position:0 -1200px;}
+.ico_mark.branch {background-position:0 -1400px;}
+.ico_mark.identify {background-position:0 -1600px;}
+.ico_mark.formula {background-position:0 -1800px;}
+.ico_mark.progress {background-position:0 -2000px;}
+/*게시판 검색 버튼*/
+.btn_srch.btn_sort a.btn_set.btnWh {background:url(/front/img/com/btn_file.png) 0 0 no-repeat; padding-left:26px}
+.btn_srch.btn_sort a.btn_set.btnWh span {padding-right:9px; letter-spacing:-1px; font-family:Malgun Gothic,dotum; font-size:12}
+.btn_srch a.btn_set {padding-left:15px;}
+.btn_srch a.btn_set:first-child {margin-left:0;}
+.btn_srch a.btn_set span {padding-right:15px; height:24px; line-height:24px; *line-height:23px; font-size:12px;}
+.btn_srch a.btn_set.btnRe {background-position:0% -390px;}
+.btn_srch a.btn_set.btnRe span {background-position:100% -390px; line-height:22px;}
+.btn_srch a.btn_set.btnWh {background-position:0% -361px;}
+.btn_srch a.btn_set.btnWh span {background-position:100% -361px;}
+
+/* 알림주석 마크업 */
+/* 상단 */
+.req {margin-left:4px; color:#ed1c24;}
+.txt_table_info {text-align:right; font-size:11px; color:#606060; padding-bottom:7px;}
+.txt_table_info .req {margin-right:6px;}
+
+.req22 {margin-left:4px; color:#ffffff;}
+/* 하단 */
+.comment {vertical-align:middle; margin:16px 0 0; font-size:11px; color:#606060;}
+.comment .ico_notice {padding-top:1px; letter-spacing:0;}
+.comment.pos_btn {margin-bottom:0;} /* 주석과 버튼 하단 여백 조정을 위해 추가 */
+/* 컨텐츠 안 */
+dl.ico_notice dt,dl.ico_notice dd {line-height:16px; color:#606060; font-size:11px; vertical-align:middle;}
+dl.ico_notice dd {background:url(/front/img/com/ico_notice.png) 0 3px no-repeat; padding-left:15px;}
+span.ico_notice, ul.ico_notice>li, ol.ico_notice>li {display:block; background:url(/front/img/com/ico_notice.png) 0 2px no-repeat; line-height:16px; padding-left:15px; color:#606060; font-size:11px; vertical-align:middle;}
+span.ico_notice.type02, ul.ico_notice.type02, ol.ico_notice.type02 {font-size:12px; letter-spacing:0px;}
+span.ico_notice.bgnon {background-image:none; padding-left:0;}
+li .ico_notice {background-position:0 2px;} /* 리스트 안의 주석 처리*/
+.ico_notice li.has_btn,
+.ico_notice.has_btn {background-position:0 6px;}/* 주석안에 버튼이 올경우 */
+.ico_notice.type02 {margin-top:-10px;} /* 2013.03.06 | 박현아 추가 | 회색 검색박스 아래 주석이 올때 */
+
+/* 댓글 */
+.comment_wrap {margin-bottom:30px;}
+form .comment_reply_box {}
+form .comment_reply_box h2 {font-size:16px ; font-weight:bold; font-family:Malgun Gothic,dotum; letter-spacing:-1px;}
+form .comment_reply_box h2 strong {color:#ed1c24;}
+form .comment_reply_box .comment_box {background:#f0f0f0; margin-top:19px; padding:20px; zoom:1;}
+form .comment_reply_box .comment_box:after {content:""; display:block; clear:both;}
+form .comment_reply_box .comment_box .board_align {margin-bottom:7px;}
+form .comment_reply_box .comment_box .board_align .area_right {margin-right:72px;}
+form .comment_reply_box .comment_box .board_align .area_right strong {font-weight:bold;}
+form .comment_reply_box .comment_box textarea {float:left; width:89%; height:47px;}
+form .comment_reply_box .comment_box .btn_bbs {float:right; margin:0;}
+form .comment_reply_box .comment_box .btn_bbs a.btn_set {background-position:0 -475px;}
+form .comment_reply_box .comment_box .btn_bbs a.btn_set span {background-position:100% -475px; height:54px; line-height:54px;}
+form .comment_reply_box ul.comment_reply_list {}
+form .comment_reply_box ul.comment_reply_list li {background:url(/front/img/com/bul_dot_bf.gif) left bottom repeat-x; padding:19px;}
+form .comment_reply_box ul.comment_reply_list li p.user_name {}
+form .comment_reply_box ul.comment_reply_list li p.user_name strong {margin-right:4px; font-weight:bold;}
+form .comment_reply_box ul.comment_reply_list li p.user_name span {margin-right:8px; color:#606060;}
+form .comment_reply_box ul.comment_reply_list li div.re_cont_view {margin-top:7px;}
+form .comment_reply_box ul.comment_reply_list li .modify_box {margin-top:13px;}
+form .comment_reply_box ul.comment_reply_list li .textarea {margin-top:7px;}
+form .comment_reply_box ul.comment_reply_list li .textarea textarea {width:100%; height:36px; padding:8px 0;}
+form .comment_reply_box ul.comment_reply_list li .modify_box .ico_file {padding:0;}
+form .comment_reply_box ul.comment_reply_list li .modify_box .ico_file a {margin-left:4px; margin-right:0;}
+form .comment_reply_box ul.comment_reply_list li .modify_box .ico_file a span {padding-left:19px; text-decoration:none;}
+
+/**** TAB ****/
+/* TAB TYPE01 */
+.wrap_tab {margin-bottom:35px;}
+.wrap_tab_sub {margin-bottom:77px;} 
+.tab_layer {position:relative; zoom:1; height:41px; background:url(/front/img/com/bg_line.png) 0 100% repeat-x;}
+.tab_layer > li {float:left; margin-left:-1px;}
+.tab_layer > li:first-child {margin-left:0;}
+.tab_layer > li > a {display:block; padding-left:25px; background:#ffffff url(/front/img/com/btn_set.png) left -237px no-repeat; color:#454545;}
+.tab_layer > li > a.link {color:#454545;}
+.tab_layer > li > a > span {display:block; height:25px; padding:16px 25px 0px 0; background:#ffffff url(/front/img/com/btn_set.png) right -237px no-repeat; cursor:pointer; text-align:center; line-height:14px;}
+.tab_layer > li > a > span.txt2 {height:32px; padding-top:9px;}
+.tab_layer > li.on > a, .tab_layer > li:hover > a {background-position:left -280px; font-weight:bold; letter-spacing:-1px; color:#262626;}
+.tab_layer > li.on > a > span, .tab_layer > li:hover > a > span {margin-top:3px; padding-top:13px; background-position:right -280px;}
+.tab_layer > li.on > a > span.txt2, .tab_layer > li:hover > a > span.txt2 {height:34px; padding-top:6px;}
+.tab_layer:after {display:block; content:""; height:0px; clear:both; visibility:hidden;}
+.sub_layer {position:absolute; left:25px; top:58px; width:717px; zoom:1;}
+.sub_layer > li {float:left; background:url(/front/img/com/bul_bar_01.png) left 2px no-repeat; padding:0 14px; margin-bottom:1px;}
+.sub_layer > li > a {color:#262626; display:block; padding-bottom:15px; vertical-align:top;}
+/*.sub_layer > li {float:left; padding:0 15px; background:url(/front/img/com/bul_bar_01.png) left top no-repeat;}
+.sub_layer > li > a {color:#262626;} 
+2013.02.02 | 박현아 추가 | color 색상 지정*/
+.sub_layer > li:first-child {padding-left:0; background:none;}
+.sub_layer > li.sub_on > a {display:block; padding-bottom:10px; border-bottom:1px solid #1479c7; color:#262626;}
+.sub_layer:after {display:block; content:""; height:0px; clear:both; visibility:hidden;}
+/* TAB TYPE02 */
+/* 2013.04.28 | 김미선 | tab type02 아래 버튼이 올경우 */
+.wrap_tab_btn .tab_table {margin-bottom:20px; border-bottom:1px #F0EFEF solid;}
+.wrap_tab_btn .btn_file.btnS {margin-bottom:30px;}
+
+.tab_table {margin-bottom:35px; border-bottom:1px #F0EFEF solid;}
+.tab_table table.tabmenu {}
+.tab_table table.tabmenu td {border-top:1px #F0EFEF solid; border-right:1px #F0EFEF solid;}
+.tab_table table.tabmenu td:first-child {border-left:1px #F0EFEF solid;}
+.tab_table table.tabmenu td a {display:block; width:100%; padding:11px 0 ; line-height:18px; text-align:center;}
+.tab_table table.tabmenu td a.link {color:#454545;}
+.tab_table table.tabmenu td:hover, .tab_table table.tabmenu td.on {background:#F4FAFF; border-top:1px #1479c7 solid;}
+.tab_table table.tabmenu td:hover a, .tab_table table.tabmenu td.on a {color:#1479c7; font-weight:bold;}
+/* 탭 sub */
+.tab_table_sub {margin:-35px 0 35px; padding:20px 20px 25px; border:1px solid #ecebeb; border-top:none;}
+.tab_table_sub p.pointBl {margin:0 0 7px; padding-left:20px; font-size:12px; font-family:dotum;} /* 2013.04.03 ㅣ 조성미 추가 ㅣ 블릿체계 유지를 위한 수정 */
+.tab_table_sub hj2.pointBl {margin:0 0 7px; padding-left:20px; font-size:12px; font-family:dotum;} /* 2013.04.03 ㅣ 조성미 삭제 예정ㅣ 컨텐츠 블릿체계 영향을 주고있음 삭제 예정 */
+.tab_table_sub ul.tabmenu_sub {background:#fafafa; padding:11px 0 12px;}
+.tab_table_sub ul.tabmenu_sub {width:100%; *zoom:1;}
+.tab_table_sub ul.tabmenu_sub:after {content:""; display:block; clear:both;}
+.tab_table_sub ul.tabmenu_sub li {float:left; background:url(/front/img/com/bul_bar_d6.gif) left center no-repeat; width:25%; text-align:center; line-height:22px;} /* 2013.03.26 ㅣ조성미 수정ㅣ 2Ddepth에서는 4개항목으로 떨어지게 변경 */
+.tab_table_sub ul.tabmenu_sub li:first-child {background:none;}/* 05.01 |강완수정| var 이미지 왼쪽정렬로 수정 후 첫번째꺼는 없앰 */
+.tab_table_sub ul.tabmenu_sub li a {display:block; padding:0 21px 0 20px; color:#262626; line-height:20px;}
+.tab_table_sub ul.tabmenu_sub li a:visited, 
+.tab_table_sub ul.tabmenu_sub li.on a {color:#1479c7;}
+
+/**** BOARD ****/
+/* BOARD COMMON */
+.btn_bbs {margin-top:20px;}
+.btn_bbs a.btn_set {}
+.btn_bbs a.btn_set:first-child {margin-left:0;}
+.btn_bbs a.btn_set span {height:33px; font-size:14px; line-height:33px; *line-height:32px;}
+/* 게시판 검색 */
+.wrap_form_srch {margin-bottom:30px;} /*2013.03.06 | 박현아 수정 | 회색 검색박스 아래 여백 조정 */
+.wrap_form_srch .btn_bbs {margin-bottom:-8px;} /* 2013.04.25 l조성미 추가l 간격수정 추가, 04.25송경환 수정 margin-top:-20px;, 05.03 조성미 수정 */
+.wrap_form_srch .btn_bbs span {background-color:#f0f0f0;}
+.box_search {background-color:#f0f0f0; padding:15px;}
+.box_search .search th {text-align:left; padding:10px 0 0 15px;}
+.box_search .search th span {padding-left:9px; background:url(/front/img/com/bul_squ_list.png) 0 5px no-repeat;}
+.box_search .search td {text-align:left;}
+.box_search .search td.td_cont {padding:6px 0;}
+.box_search .search td span.label {padding-left:9px; background:url(/front/img/com/bul_squ_list.png) 0 5px no-repeat;}
+.box_search .search td {text-align:left;}
+.box_search .search td div.td_cont {padding:10px 0 0 0;}
+.box_search .search tr:first-child th {padding-top:0;}
+.box_search .search tr:first-child div.td_cont {padding:0;}
+.box_search .search .keyword_srch {width:250px;}
+.box_search .search .kind_list li {padding-top:2px; vertical-align:middle;}
+.box_search .search .kind_list li input[type="radio"] {}
+.box_search .search .kind_list li label {margin-right:0;}
+.box_search .search .kind_list:after {display:block; content:""; clear:both;}
+/* 2013.04.13 ㅣ조성미 추가ㅣ 라디오박스가 상위로 왔을때 ex)기업센터-과제협력목록 */
+.box_search .search .kind_list.top li {padding-top:0;}
+
+/* etc */
+.btn_radio label {display:inline-block; margin:0 10px 0 3px;}
+.box_search .search .btn_radio span {display:inline-block; margin-right:10px; margin-bottom:10px;}
+.btn_radio input[type=checkbox],
+.btn_radio input[type=radio] {width:13px; height:13px; margin:0; padding:0;}
+.search .ico_set {vertical-align:middle; width:22px; height:22px; background-color:transparent; background:url(/front/img/com/ico_set.png) left top no-repeat; margin-left:3px;}
+.search_basic {padding-bottom:10px;}
+.form_search .btnC {margin:20px 0 -20px;}
+.form_search .comment {margin-bottom:0;}
+
+/* .td_cont */
+.td_cont .ico_file a,
+.td_cont.ico_file a {background:none; margin-right:0;}
+.td_cont .kind_list li {margin-right:10px; padding-top:5px;}
+.td_cont .kind_list li:first-child {margin-bottom:0;}
+.td_cont .kind_list li input[type="radio"] {/* 2013.04.13 ㅣ조성미ㅣ라디오 간격 맞추기 위해 삭제 margin-right:5px; */ vertical-align:-2px; *vertical-align:middle;}
+.td_cont .kind_list li label {vertical-align:middle;}
+.td_cont>.bul_5dep_list {margin-bottom:-2px;}/* 2013.04.10 l조성미 추가l 테이블안 블릿체계 하단 간격조정위해 추가  */
+.td_cont .bul_5dep_list.kind_list {margin:0;}
+.td_cont .bul_5dep_list.kind_list li {margin:0 20px 0 0;}
+.td_cont .btn_file.btnS, .td_cont .btn_file.btnS a {margin-bottom:0;} /* 2013.04.28 | 김미선 | 테이블 내 버튼 하단 간격 리셋함 */
+
+
+/* 목록 */
+.bbs_list_box {}
+.bbs_list {border-top:1px solid #1b68bc;}
+.bbs_list table.list {}
+.bbs_list table.list thead tr th {padding:11px 0 10px; text-align:center; color:#195492; line-height:16px; background:#eff8ff;}
+.bbs_list table.list tbody tr:hover th,
+.bbs_list table.list tbody tr:hover td {background:#fdfdff;}
+.bbs_list table.list tbody tr:hover th.no_data,
+.bbs_list table.list tbody tr:hover td.no_data {background:none;}
+.bbs_list table.list tbody tr th,
+.bbs_list table.list tbody tr td {padding:11px 0 10px; text-align:center; border-bottom:1px solid #ecebeb;}
+.bbs_list table.list tbody tr td.tit {text-align:left; padding-left:10px;}
+.bbs_list table.list tbody tr td.alR .td_cont {padding-right:15px;}
+td.tit a strong {font-weight:normal;}
+strong.sort {font-weight:bold;}
+.bbs_list table.list tbody tr td.tit a:hover {color:#1479c7;}
+.bbs_list table.list tbody tr td.tit a:visited {color:#1479c7;}
+.bbs_list table.list tbody tr td.down a {vertical-align:middle;}
+.bbs_list table tbody tr td.no_data {line-height:150px; text-align:center; border-top:none; border-bottom:1px solid #ecebeb;}
+.bbs_list table.list td .bul_5dep_list {margin-bottom:0;}/* 2103.03.06 | 박현아 추가 | 여백 조정*/
+.bbs_list table.list td .desc {background:url(/front/img/com/bul_squ_list.png) 0 7px no-repeat; padding-bottom:5px; padding-left:8px; line-height:22px;}
+.no_data {line-height:150px; text-align:center; border-top:1px solid #ecebeb; border-bottom:1px solid #ecebeb;}
+
+/* 상세 */
+.bbs_box .bbs_view {}
+.bbs_box .bbs_view dl.view {}
+.bbs_box .bbs_view dl.view {}
+.bbs_box .bbs_view dl.view dt {padding:10px 20px 10px 25px; text-align:center; font-size:12px; font-weight:bold; line-height:20px; border-top:1px solid #ececec;}
+.bbs_box .bbs_view dl.view dt.hide {display:block; height: 0; width: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; overflow:hidden;}
+.bbs_box .bbs_view dl.view dd div {}
+.bbs_box .bbs_view dl.view dd.info {background:#eff8ff; width:100%; border-top:1px solid #1c68bd;}
+.bbs_box .bbs_view dl.view dd.info div.article {padding:12px 0 3px;}
+.bbs_box .bbs_view dl.view dd.info div.article table {}
+.bbs_box .bbs_view dl.view dd.info div.article table tbody tr th {text-align:left; background:url(/front/img/com/bul_bar_b3d1eb.gif) right 4px no-repeat; vertical-align:top;}
+.bbs_box .bbs_view dl.view dd.info div.article table tbody tr th span {display:inline-block; margin-left:20px; padding-bottom:5px; color:#195492; line-height:20px;}
+.bbs_box .bbs_view dl.view dd.info div.article table tbody tr td {}
+.bbs_box .bbs_view dl.view dd.info div.article table tbody tr td div {margin-left:10px; padding:0 10px 7px 0; text-align:left; line-height:20px; vertical-align:top;}/* line-height:18px; */
+.bbs_box .bbs_view dl.view dd.view_cont div.cont {padding:30px 20px; border-bottom:1px solid #ececec; line-height:1.5}
+.bbs_box .bbs_view dl.view dd.view_cont div.cont img {max-width:677px; margin-bottom:16px;} /* 2012.02.20 | 김미선 | 이미지 최대사이즈 제한으로 변경함 */
+.bbs_box .bbs_view dl.view dd.view_comment {margin-bottom:30px;}
+.bbs_box .bbs_view dl.view dd.view_comment h2.h2tit {margin:0 0 20px 0;}
+.bbs_box .bbs_view dl.view dd.file {background:#f0f0f0;}
+/* 2013.03.11 l조성미 추가l 로그형태 추가 */
+.bbs_box .bbs_view dl.view dd.log_list {padding:16px 20px 15px; border-bottom:1px solid #ececec;}
+.bbs_box .bbs_view dl.view dd.log_list ul {width:100%; zoom:1;}
+.bbs_box .bbs_view dl.view dd.log_list ul:after {content:""; display:block; clear:both;}
+.bbs_box .bbs_view dl.view dd.log_list ul li {float:left; background:url(/front/img/com/bul_bar_d6.gif) right 4px no-repeat; padding-right:10px; margin-right:10px; line-height:20px;}
+.bbs_box .bbs_view dl.view dd.log_list ul li.bgnon {background:none;}
+.bbs_box .bbs_view dl.view dd.button .btn_bbs {margin-bottom:30px;}
+.bbs_box .bbs_view dl.view dd.button .board_align {margin:0;}
+.bbs_box .bbs_view dl.view dd.button span.ico_notice {background-position:0 6px}
+
+/* FAQ LSIT */
+.faq_box .h2tit {margin-bottom:20px;}
+.faq_box .faq_list {border-top:1px #1479c7 solid;}
+.faq_box .faq_list>li {border-bottom:1px #e7e8e8 solid;}
+.faq_box .faq_list>li>a {display:block; background:url(/front/img/com/ico_faq.png) 100% 0 no-repeat; width:100%; padding:15px 0;position:relative;}
+.faq_box .faq_list>li>a:after {content:'.'; display:block; height:0px; clear:both; visibility:hidden;}
+.faq_box .faq_list>li>a span.category {float:left; width:140px; height:100%; margin:0 0px 0 20px; color:#1479c7; font-weight:normal;}
+.faq_box .faq_list>li>a span.faq_q {display:block; margin-left:170px; margin-right:45px; font-weight:normal;}
+.faq_box .faq_list>li .faq_a {display:none;}
+.faq_box .faq_list>li .ico_file {margin-top:15px; padding:0px;}
+.faq_box .faq_list>li .ico_file a:hover {text-decoration:underline;}
+.faq_box .faq_list>li.no_data {height:150px; line-height:150px; text-align:center;}
+.faq_box .faq_list>li.on {background:#fdfdff;}
+.faq_box .faq_list>li.on>a {display:block; background:url(/front/img/com/ico_faq.png) 100% -140px no-repeat; width:100%; padding:15px 0;}
+.faq_box .faq_list>li.on>a span.category {font-weight:bold; letter-spacing:-1px;}
+.faq_box .faq_list>li.on>a span.faq_q {font-weight:bold; letter-spacing:-1px;}
+.faq_box .faq_list>li.on .faq_a {display:block; padding:18px 18px 18px 20px; border-top:1px #e7e8e8 solid;}
+.faq_box .faq_list>li.on .faq_a .txt_dsc {/* margin:; */ line-height:20px;}
+.faq_box .faq_list>li>a .close{position:absolute;display:inline-block;width:50px;top:0;right:0;background:url(/front/img/com/ico_faq.png) 100% 0 no-repeat; padding:15px 0;text-indent:-9999px}
+.faq_box .faq_list>li>a .open{position:absolute;display:inline-block;width:50px;top:0;right:0;background:url(/front/img/com/ico_faq.png) 100% -140px no-repeat; padding:15px 0;text-indent:-9999px}
+
+/* 미리보는 목록 */
+.bbs_prev {border-top:1px solid #1b68bc;}
+.bbs_prev table.list {}
+.bbs_prev table.list tbody tr th {background:#eff8ff; text-align:center; color:#195492; line-height:40px; border-bottom:1px solid #eff8ff; vertical-align:top;}
+.bbs_prev table.list tbody tr td {line-height:40px; text-align:center; border-bottom:1px solid #ecebeb;}
+.bbs_prev table.list tbody tr td.btnR {text-align:right;}
+.bbs_prev table.list tbody tr td.btnR span {padding-right:20px;}
+.bbs_prev table.list tbody tr td.tit {text-align:left; text-indent:21px;} 
+.bbs_prev table.list tbody tr td.tit .present {position:relative; padding:12px 0 0; line-height:18px;}
+.bbs_prev table.list tbody tr td.tit .present > a {color:#464646;}
+.bbs_prev table.list tbody tr td.tit .present a.on {font-weight:bold;}
+.bbs_prev table.list tbody tr td.tit .present span.date {position:absolute; right:0; top:10px; margin-right:20px;}
+.bbs_prev table.list tbody tr td.tit .present ul.present_list {margin:11px 0 3px 10px;}
+.bbs_prev table.list tbody tr td.tit .present ul.present_list li {position:relative; height:22px;}
+.bbs_prev table.list tbody tr td.tit .present ul.present_list li a {background:url(/front/img/com/btn_icon_file.png) -6px -869px no-repeat; padding-left:29px; color:#606060;}
+.bbs_prev table.list tbody tr td.tit .present ul.present_list li span.date {top:0;}
+
+/* 이미지 갤러리 */
+dl.g_box {position:relative;}
+dl.g_box dt {padding-bottom:4px; font-size:12px; font-weight:bold; line-height:22px;}
+dl.g_box dd {}
+dl.g_box dd.thumb {position:absolute; left:0; top:0; overflow:hidden; width:223px; height:155px; border:1px solid #ecebeb;}
+dl.g_box dd.thumb img {position:absolute; top:0; left:0;}
+dl.g_box dd.thumb > a {position:relative; display:block; width:100%; height:100%;}
+dl.g_box dd.thumb:hover a > span {position:absolute; top:50%; left:50%; background:url(/front/img/com/ico_set.png) 0 -180px no-repeat; width:54px; height:54px; margin:-27px 0 0 -27px;}
+dl.g_box dt.info span,
+dl.g_box dd.info span {display:inline-block; background:url(/front/img/com/bul_bar_d6.gif) left center no-repeat; padding:0 1px 0 7px;}
+dl.g_box dt.info span:first-child,
+dl.g_box dd.info span:first-child {background:none; padding-left:0;}
+dl.g_box dd.sort {margin-bottom:4px;}
+.gallery_list_box {width:740px;}
+ul.gallery_list {width:100%; zoom:1;}
+ul.gallery_list:after {content:""; display:block; clear:both;}
+ul.gallery_list > li {float:left; width:225px; margin:27px 31px 0 0;}
+ul.gallery_list > li dl.g_box {padding-top:172px;}
+ul.gallery_list > li dl.g_box dt {overflow:hidden; height:35px; line-height:18px;}
+/* 갤러리 미리보기 */
+.gallery_perv_box {position:relative; width:740px; margin:0 auto;}
+.gallery_perv_box a.ico {display:block; position:absolute; top:51px; background:url(/front/img/com/board_bg.png) no-repeat; width:29px; height:29px;}
+.gallery_perv_box a.ico.ico_prev {left:20px; background-position:-68px 0;}
+.gallery_perv_box a.ico.ico_next {right:20px; background-position:-102px 0;}
+.gallery_perv_box .gallery_box {position:relative; overflow:hidden; width:580px; margin:0 auto 0;}
+.gallery_perv_box .gallery_box ul.gallery_list {position:relative;}
+.gallery_perv_box .gallery_box ul.gallery_list li {overflow:hidden; width:108px; height:76px; margin-right:10px;}
+.gallery_perv_box .gallery_box ul.gallery_list li.on {}
+.gallery_perv_box .gallery_box ul.gallery_list li a {position:relative;}
+.gallery_perv_box .gallery_box ul.gallery_list li a,
+.gallery_perv_box .gallery_box ul.gallery_list li.on:hover a
+ {display:block; overflow:hidden; width:100%; height:100%; border:none;}
+.gallery_perv_box .gallery_box ul.gallery_list li img,
+.gallery_perv_box .gallery_box ul.gallery_list li.on:hover img
+ {/* 2013.03.12 l조성미삭제l 개발요처으로 삭제 width:108px; height:76px; */ margin:0;}
+.gallery_perv_box .gallery_box ul.gallery_list li.on a {width:98px; height:66px; border:5px #297ee9 solid;}
+.gallery_perv_box .gallery_box ul.gallery_list li.on a img {margin:-5px 0 0 -5px;}
+.gallery_perv_box .gallery_box ul.gallery_list li:hover a>span {position:absolute; top:50%; left:50%; background:url(/front/img/com/ico_set.png) 0 -130px no-repeat; width:44px; height:44px; margin:-22px 0 0 -22px;}
+/* 동영상 갤러리 */	
+.bbs_box.vedio_box .vedio_cont {}
+.bbs_box.vedio_box .vedio_cont .vedio_cont dl {}
+.bbs_box.vedio_box .vedio_cont dl dt {margin-bottom:7px; font-size:16px; font-weight:bold;}
+.bbs_box.vedio_box .vedio_cont dl dd.info {margin:0 0 19px;}
+.bbs_box.vedio_box .vedio_cont dl dd.info span {display:inline-block; background:url(/front/img/com/bul_bar_d6.gif) left center no-repeat; padding:0 1px 0 7px; color:#606060; font-weight:normal;}
+.bbs_box.vedio_box .vedio_cont dl dd.info span:first-child {background:none; padding-left:0;}
+.bbs_box.vedio_box .vedio_cont dl dd.vedio_view {width:100%; height:309px; border-top:1px solid #1479c7; zoom:1;}
+.bbs_box.vedio_box .vedio_cont dl dd.vedio_view:after {content:""; display:block; clear:both;}
+.bbs_box.vedio_box .vedio_cont dl dd.vedio_view div.view {float:left; background:url(/front/img/com/test.gif) 0 0 no-repeat; width:458px; height:309px;}
+.bbs_box.vedio_box .vedio_cont dl dd.vedio_view .description {overflow-y:scroll; height:268px; line-height:1.5em; padding:20px; border-bottom:1px solid #d6d6d6;}
+/* 동영상 갤러리 미리보기 */
+ul.gallery_list.vedio_prev_list {width:740px; margin:0 auto;}
+ul.gallery_list.vedio_prev_list li {width:164px; margin-right:28px;}
+ul.gallery_list.vedio_prev_list li dl.g_box {padding-top:129px;}
+ul.gallery_list.vedio_prev_list li dl.g_box dd.thumb {width:164px; height:114px;}
+
+/* 페이징 */
+.paging {width:446px; height:29px; margin:20px auto 30px; text-align:center; zoom:1;}
+.paging:after {content:""; display:block; clear:both;}
+.paging a {display:inline-block; background:url(/front/img/com/board_bg.png) no-repeat; width:29px; height:29px; margin-left:-1px; text-align:center; font-size:11px; line-height:31px; letter-spacing:-1px; vertical-align:top;}
+.paging a:first-child {margin-left:0;}
+.paging a.on,
+.paging a:hover,
+.paging a:active,
+.paging a:visited {color:#195492; background-position:0 -34px;}
+.paging a.ico_first {background-position:-34px 0;}
+.paging a.ico_first:hover,
+.paging a.ico_first:active,
+.paging a.ico_first:visited {background-position:-34px -34px;}
+.paging a.ico_prev {background-position:-68px 0;}
+.paging a.ico_prev:hover,
+.paging a.ico_prev:active,
+.paging a.ico_prev:visited {background-position:-68px -34px;}
+.paging a.ico_next {background-position:-102px 0;}
+.paging a.ico_next:hover,
+.paging a.ico_next:active,
+.paging a.ico_next:visited {background-position:-102px -34px;}
+.paging a.ico_last {background-position:-136px 0;}
+.paging a.ico_last:hover,
+.paging a.ico_last:active,
+.paging a.ico_last:visited {background-position:-136px -34px;}
+/* 10페이지 이하일때 양쪽 화살표 이미지 제어 */
+.paging a.ico_first.ico_off {background-position:0 -160px;}
+.paging a.ico_prev.ico_off {background-position:-39px -160px;}
+.paging a.ico_next.ico_off {background-position:-78px -160px;}
+.paging a.ico_last.ico_off {background-position:-117px -160px;}
+.paging a.ico_first.ico_off,
+.paging a.ico_prev.ico_off,
+.paging a.ico_next.ico_off,
+.paging a.ico_last.ico_off {cursor:default;}
+
+/**** TABLE ****/
+/*테이블 공통*/
+.wrap_table {border-top:1px solid #1479c7;}
+table span.ico_notice {margin-bottom:3px;}
+:root table span.ico_notice, :root table ul.ico_notice li {background-position:0 1px; line-height:14px;}
+.lineR {border-right:1px solid #b3d2e9;}
+
+/*테이블 리스트*/
+.table_list th {background-color:#f2f9ff; color:#1d69a3; /*border-right:1px solid #b3d2e9;*/ border-left:1px solid #b3d2e9;}
+.table_list th span {display:block; padding:10px 0;}
+.table_list td {text-align:left; border-bottom:1px solid #b3d2e9; border-left:1px solid #b3d2e9;}
+.table_list td .btn_file a {margin-bottom:3px;}/* 2013.03.22 l조성미 추가l 버튼 상하간격 */
+.table_list td div.td_cont {margin:7px 10px; line-height:18px;}
+/*.table_list th:first-child, .table_list td:first-child {border-left:none;}*/
+.table_list tbody th {background-color:#ffffff;border-bottom:1px solid #b3d2e9;}
+.table_list tbody th span {display:block;padding:7px 10px; line-height:22px; color:#454545;}
+.table_list tfoot th {background-color:#ffffff; border-bottom:1px solid #b3d2e9;}
+.table_list tfoot th span, .table_list tfoot td div {color:#1479c7; font-weight:bold;}
+.table_list tr td.no_data  {min-height:150px; line-height:150px; text-align:center; border-top:none; border-bottom:1px solid #b3d2e9;}
+.table_list tr.bor_no td {border-bottom:0;}
+.table_list tr.th_center th {text-align:center;}
+/*.table_list tr.th_add th:first-child, .table_list tr.td_add td:first-child {border-left:1px solid #b3d2e9;}
+.table_list tr.th_add th {border-top:1px solid #b3d2e9;}
+.table_list tr.td_add td:first-child {border-left:1px solid #b3d2e9;}*/
+/*데이터 테이블 순서리스트*/
+.table_list .td_cont ol li {line-height:18px;}
+/*테이블 안내*/
+.table_info {border-bottom:1px solid #b3d2e9;}
+.table_info th {text-align:left; background-color:#f2f9ff; color:#1d69a3; line-height:22px; border-bottom:1px solid #b3d2e9;}
+.table_info th>span {display:block; padding:7px 20px;}
+.table_info td {border-bottom:1px solid #b3d2e9; line-height:1.5em;}
+.table_info td div.td_cont {margin:7px 10px;}
+.table_info td.no_data {line-height:100px;}
+.table_info .zip_code {margin-bottom:7px;}
+.table_info .address>input[type="text"] {display:block;width:100%; margin-bottom:7px;}
+.table_info .tel input[type="text"] {width:60px;}
+.table_info .ico_file {padding:0;}/*읽기페이지 기능버튼*/
+.table_info .ico_file.type02 {margin:0 0 5px;}/*읽기페이지 기능버튼*/
+.table_info .name.kr {margin-bottom:10px;}/*입력필드 이름 두줄*/
+/* 사진입력 테이블 필드 */
+.table_info th .rc_photo {background:#fff; width:105px; height:auto; margin:10px 20px; text-align:center;}
+.table_info th .rc_photo p {padding:15px 0;}
+.table_info th .rc_photo dl {padding:13px 0 20px;}
+.table_info th .rc_photo dl dd {}
+.table_info th .rc_photo dl dd.btnArea {margin-top:10px;}
+.table_info.table_filed th .rc_photo dl dt {display:block; height: 0; width: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; overflow:hidden;}
+/*테이블 검색*/
+.table_search th {padding-left:20px; background-color:#f2f9ff; color:#1d69a3; border-bottom:1px solid #b3d2e9;}
+.table_search td {border-bottom:1px solid #b3d2e9;}
+.table_search td:first-child {border:1px solid #b3d2e9;}
+.table_search td div.td_cont {margin:7px 10px;}
+.table_search .wrap_sel {display:block; margin-bottom:7px;}
+.table_search .box_gray .name input[type="text"] {width:90px;}
+.table_search .box_gray .person_num input[type="text"],.table_search .box_gray .person_num input[type="password"] {width:89px;}
+.table_search .box_gray .desc input[type="text"] {width:328px;}
+/*테이블 스크롤*/
+.wrap_scroll {width:100%; height:300px;overflow-x:hidden; overflow-y:scroll;}
+.wrap_scroll table {width:100%;}
+/*테이블 입력*/
+/* 입력필드 input */
+input.alR {padding-right:5px; text-indent:0;}
+input[title*="등록번호"] {width:60px; text-align:center;}
+input[title*="전화번호"],input[title*="FAX"],input[title*="우편"],input[title*="생년"] {width:50px; padding-left:0; text-indent:0; text-align:center;}
+input[title*="사업자등록번호 앞자리"] {width:34px; padding-left:0; text-indent:0; text-align:center;}
+input[title*="사업자등록번호 중간자리"] {width:29px; padding-left:0; text-indent:0; text-align:center;}
+input[title*="사업자등록번호 뒷자리"] {width:47px; padding-left:0; text-indent:0; text-align:center;}
+input[title*="이메일 주소"],input[title*="비밀번호"] {width:120px;}
+input[title*="성명"], input[title*="아이디"] {width:80px;}
+input[title*="날짜"]  {width:70px;} 
+input[title*="제목"] {width:100%;}
+.srch_terms>select {margin-bottom:10px;}
+.srch_terms>a.btn_set {vertical-align:top;}/* 2013.03.22 l조성미 추가l 테이블 검색필드에 행추가 버튼이 들어갈경우 세로정렬을 위한 소스 */
+.table_filed .comment,
+.table_filed dl.ico_notice {margin-bottom:5px;}
+.table_filed ul.ico_notice li {margin:0 0 5px 0; font-size:11px; line-height:14px; color:#606060;}
+.table_filed .bul_5dep_list>li.has_btn {margin-top:5px;}
+.table_filed .td_cont input[type="radio"] {width:12px; height:12px; margin:0px; padding:0;}
+.table_filed .td_cont label {margin-right:5px;}
+.table_filed .td_cont textarea {height:100px;}
+.add_file {margin-top:7px;}
+/*테이블 안에 테이블*/
+table .wrap_table.inner {border:1px solid #ecebeb; border-bottom:0; margin-bottom:0;}
+table .wrap_table.inner table.table_inner th {background-color:#f8f8f8; color:#606060; border-right:1px solid #ecebeb; border-bottom:none; text-align:center;}
+table .wrap_table.inner table.table_inner th span {display:block; padding:10px 0; line-height:16px;}
+table .wrap_table.inner table.table_inner td {text-align:center; border-right:1px solid #ecebeb; border-bottom:1px solid #ecebeb;}
+table .wrap_table.inner table.table_inner .td_cont {margin:13px 10px 11px 10px;}
+/*textarea 하단 문구관련*/
+.table_write .has_dl textarea {margin-bottom:10px;}
+.table_write .has_dl dt {line-height:18px;}
+.table_write .has_dl ol.list li {line-height:18px;}
+/*테이블 안에 두줄인 경우*/
+.col_group .col_line {padding-top:7px;}
+.col_group .col_line:first-child {padding-top:0px;}
+/*테이블 안에 컨텐트 리스트*/
+.cont_info {padding-top:10px;}
+.cont_info li {padding:0 0 5px 12px; background:url(/front/img/com/bul_squ5_list.png) 4px 7px no-repeat;}
+/* 2013.04.08 | 김미선 | 테이블 리스트 간격조정을 위한 수정
+.cont_info li {padding:0 0 10px 20px; background:url(/front/img/com/bul_squ5_list.png) 10px 5px no-repeat;}
+*/
+.cont_info.col_group li.col_line {padding-top:0;}
+.col_line.address {padding-top:0;}/* 항목 주소에 셀렉트가 상단 올때 */
+/* 입력필드 하단 제출서류 첨부파일 리스트 */
+.cont_info.btn_list li {background-position:10px 8px; margin:0;}
+.cont_info.btn_list li label {line-height:20px;}
+/*은행 리스트*/
+.list_bank {zoom:1;}
+.list_bank li {float:left; padding:0 7px; background:url(/front/img/com/bul_bar_01.png) 0px 3px no-repeat;}
+.list_bank li:first-child {background:none; padding-left:0px;}
+.list_bank:after {display:block; content:""; height:0px; clear:both; visibility:hidden;}
+.txt_bank {padding-left:10px;}
+
+/* print */
+#print_wrap .btn_bbs,
+#print_wrap .btn_file {display:none;}
+
+/* 약관 */
+.clause_box {margin-bottom:30px;}
+.clause_box legend {display:block; margin-bottom:15px; visibility:visible;}
+.clause_box .termbox_box {height:150px; padding:15px; overflow-y:scroll; border:1px #ddd solid;}
+.clause_box .agreebox {margin:15px 0 0; text-align:center;}
+.clause_box .agreebox p {padding-bottom:5px; line-height:20px;}/*  2013.02.24ㅣ조성미 추가ㅣ 설명글이 위에 한줄 추가 될때 */
+.clause_box2 .agreebox input[type=radio],
+.clause_box .agreebox input[type=radio] {margin-left:20px;}
+.clause_box2 .agreebox {margin:15px 0 0; text-align:center;} /*  2013.03.05ㅣ박현아 추가ㅣ 설명글이 위에 한줄 추가 될때 */
+
+/* 프로세스(STEP) 박스 */
+.process_box {margin-bottom:50px;}
+.process_box dd {background:url(/front/img/com/process_box.png) no-repeat;}
+
+/* 프로세스(STEP) 박스 - 에세이전용 */
+.process_box_e {margin-bottom:50px;}
+.process_box_e dd {background:url(/front/img/com/process_box_e.png) no-repeat;}
+
+/* 프로세스(STEP) 박스 */
+.process_box_A {margin-bottom:50px;}
+.process_box_A dd {background:url(/front/img/com/process_box_a.png) no-repeat;}
+
+
+/* 수식 */
+.fx {}
+.fx .formula {background:url(/front/img/com/fx_set.png) 0 0 no-repeat; margin:0 auto;}
+
+/* 회색라인박스 */
+.box_lineGy {width:360px; background:url(/front/img/com/box_lineBl.png) 0 100% no-repeat;}
+.box_lineGy dt {background:url(/front/img/com/box_lineBl.png) 0 0 no-repeat; padding:6px 28px 8px; text-align:center; font-family:Malgun Gothic, dotum; font-size:14px; font-weight:bold;}
+.box_lineGy dd {background:url(/front/img/com/bg_dot_d5.gif) 0 0 repeat-x; padding:11px 28px 10px; text-align:left;}
+.box_lineGy dd ul {margin-bottom:0;}
+/* 회색 박스 */
+.box_gray {height:22px; background-color:#f1f1f1; padding:10px; border-bottom:1px solid #ffffff; zoom:1;}
+.box_gray .hide {padding-left:0;}
+.box_gray dt {float:left; vertical-align:middle; height:22px; padding:6px 6px 0 10px; border-left:1px solid #ffffff;}
+.box_gray dt:first-child {border:none;}
+.box_gray dd {float:left; vertical-align:middle; height:15px; padding:0 7px 0 0;}
+.box_gray:after {display:block; content:""; height:0px; clear:both; visibility:hidden;}
+/* 알림박스 회색배경 */
+.box_info {position:relative; margin-bottom:30px;}
+/* 2013.04.09 | 김미선 | 디자인 가이드 적용을 위해 내용추가*/
+.box_info dd.desc {background:none; margin-top:-10px; padding-left:0px;}
+/* 2013.04.10 l조성미 수정l 블릿삭제 */
+.box_info .desc {padding-bottom:5px; line-height:22px;}
+/* .box_info .desc {background:url(/front/img/com/bul_squ_list.png) 0 7px no-repeat; padding-bottom:5px; padding-left:8px; line-height:22px;} */
+.box_info .desc.txt {margin-top:-10px;}/* text한줄 들어갈떄 사용 */
+.box_info ul.ico_notice {margin-bottom:14px;}
+.box_info .bul_5dep_list>li {background:none; padding-left:0;}
+.box_info .bul_5dep_list.ico>li {background:url(/front/img/com/bul_squ5_list.png) 0 8px no-repeat; padding-left:8px; color:#606060;}
+.box_info .bul_5dep_list>li,
+.box_info .bul_6dep_list>li,
+.box_info .bul_7dep_list>li {color:#454545;}
+.box_info .bul_5dep_list {}
+.box_info .bul_5dep_list>li {background-position:0 8px;}
+.box_info .bul_5dep_list>li .btn_set {margin-left:6px;}
+.box_info .bul_5dep_list>li .btn_set span {background-color:#f3f3f3;}
+.box_info > .info_desc {margin-bottom:-9px;}
+.box_info .info_desc > dt {margin-bottom:19px; font-size:14px; font-weight:bold; color:#262626; font-family:Malgun Gothic,dotum; letter-spacing:-1px;}
+.bul_5dep_list>li.has_btn {margin-bottom:5px;}
+.bul_5dep_list>li.has_btn,
+.box_info .desc.has_btn {background-position:0 10px;}
+.box_info .desc .btn_set {margin-left:6px;}
+.box_info.box_info_list .wrap_desc {padding:21px 20px 3px 20px;}
+.box_info.box_info_list .wrap_desc.marg_type02 {padding-bottom:15px;}
+.box_info.box_info_list .wrap_desc .desc {padding-bottom:0;}
+.box_info.box_info_list .wrap_desc ul,
+.box_info .info_desc.marg_type02 ul,
+.box_info.box_info_list > .info_desc {margin-bottom:0;}
+/* 2013.04.10 l 조성미 수정 l */
+.box_info .wrap_desc {padding:17px 20px 9px; background-color:#f3f3f3;}
+/* 2013.04.24 | 김미선 추가 */
+.box_info.type2 .wrap_desc {padding:17px 20px 9px; background-color:#fff; border:1px solid #e6e6e6;}
+/* .box_info .wrap_desc {padding:21px20px 13px 20px; background-color:#f3f3f3;} */
+.box_info span.round {display:block; position:absolute; width:5px; height:5px;}
+/*.box_info span.round.top_left {left:0; top:0; background:#fff url(/front/img/com/bg_round_gray.gif) 0 0 no-repeat;}
+.box_info span.round.top_right {right:0; top:0; background:url(/front/img/com/bg_round_gray.gif) -5px 0px no-repeat;}
+.box_info span.round.bottom_left {left:0; bottom:0; background:url(/front/imgcom//bg_round_gray.gif) 0px -5px no-repeat;}
+.box_info span.round.bottom_right {right:0; bottom:0; background:url(/front/img/com/bg_round_gray.gif) -5px -5px no-repeat;}*/
+/* 알림박스 회색보더라운드*/
+.box_info.type2 {position:relative; padding:0; background-color:#ffffff;}
+.box_info.type2.no_marB {margin-bottom:0;} /* 2013.04.26 | 김미선 | .box_info.type2 margin-bottom값을 초기화 하기 위함 */
+.box_info.type2 span.round {display:block; position:absolute; width:5px; height:5px; background-color:#000;}
+.box_info.type2 span.round.top_left {left:0; top:0; background:url(/front/img/com/bg_round.gif) 0 0 no-repeat;}
+.box_info.type2 span.round.top_right {right:0; top:0; background:url(/front/img/com/bg_round.gif) -5px 0px no-repeat;}
+.box_info.type2 span.round.bottom_left {left:0; bottom:0; background:url(/front/img/com/bg_round.gif) 0px -5px no-repeat;}
+.box_info.type2 span.round.bottom_right {right:0; bottom:0; background:url(/front/img/com/bg_round.gif) -5px -5px no-repeat;}
+.box_info.type2 .desc.txt {margin-top:-10px;}/* text한줄 들어갈떄 사용 */
+/*.box_info.type2 .desc {background:url(/front/img/com/bul_squ_list.png) 0 7px no-repeat; padding-left:8px;}*/
+.box_info.type2 .info_desc {padding:26px 25px 18px 28px; border:1px solid #e6e6e6;}
+.box_info.type2 .info_desc .desc {display:inline-block; margin-bottom:0;}
+.box_info.type2 .info_desc .desc > ul {margin-bottom:0;} 
+.box_info.type2 .info_desc > dt {margin-bottom:19px; font-size:14px; font-weight:bold; color:#262626; font-family:Malgun Gothic,dotum;}
+.box_info.type2 .info_desc .dotline_box .bul_5dep_list p.desc{padding-bottom:0;}
+.box_info.type2 .info_desc .dotline_box .bul_5dep_list {padding-bottom:15px;}
+.box_info.type2 .info_desc .tit {display:block; margin-bottom:9px; color:#454545;}
+.box_info.type2 .info_desc .txt_info {padding-bottom:7px; line-height:20px;} 
+.box_info.type2 .info_desc .bul_6dep_list .desc {background:none; padding-left:0; margin-bottom:2px; text-indent:0; line-height:20px;}
+.box_info.type2 .info_desc .bul_5dep_list {padding-bottom:0;}
+.box_info.type2 .info_desc.info_top{padding:0 25px 0 28px !important;}
+/* 2013.04.22 | 김미선 | line887과 중복 삭제처리함 | .box_info .bul_5dep_list li {background:none; padding-left:0;}*/
+.box_info.type2 .dotline_box .bul_5dep_list {padding-bottom:14px;}
+.box_info.type2 .bul_5dep_list {color:#454545;}
+.box_info.type2 .bul_5dep_list.type2 {padding-bottom:0;}
+.box_info.type2 .bul_6dep_list {margin-bottom:14px;}
+.box_info.type2 .btn_box a {margin-left:0;}
+/* 2013.04.24 | 김미선 | 이용안내박스 버튼 사용시 간격 맞춤 */
+.box_info.type2 .btn_down {margin:5px 0 14px;}
+.box_info.type2 .btn_down span {margin-bottom:0;}
+
+/* 알림박스 파란배경 */
+.box_blue {position:relative; background-color:#f2f9ff; margin-bottom:30px;}
+.box_blue span.round {display:block; position:absolute; width:3px; height:3px;}
+.box_blue span.round.top_left {left:0; top:0; background:url(/front/img/com/bg_round_blue.png) 0 0 no-repeat;}
+.box_blue span.round.top_right {right:0; top:0; background:url(/front/img/com/bg_round_blue.png) -3px 0px no-repeat;}
+.box_blue span.round.bottom_left {left:0; bottom:0; background:url(/front/img/com/bg_round_blue.png) 0px -3px no-repeat;}
+.box_blue span.round.bottom_right {right:0; bottom:0; background:url(/front/img/com/bg_round_blue.png) -3px -3px no-repeat;}
+.box_blue .box_body {padding-bottom:5px; border:1px solid #d6e5f3;}
+.box_blue .step_info {padding:16px 28px 9px 28px; *zoom:1;}
+.box_blue .step_info dt {color:#1479c7; float:left; line-height:22px;}
+.box_blue .step_info dd {margin-left:75px; line-height:22px;}
+.box_blue .step_list span {padding:0 11px 0 10px; background:url(/front/img/com/bg_line_blue.png) 0 0 no-repeat;}
+.box_blue .step_list span:first-child {padding-left:0; background:none;}
+.box_blue .step_info.step2 {padding-top:12px; margin:0 28px; padding-left:0; padding-right:0; background:url(/front/img/com/bg_dotline_bl.png) 0 0 repeat-x;}
+.box_blue .step_info:after {content:'.'; display:block; height:0px; clear:both; visibility:hidden;}
+
+/* 이미지태그 */
+.img_set {text-align:center; margin-bottom:30px;}
+.img_set .thumb {background:url(/front/img/com/thumb_set.png) 0 0 no-repeat;}
+/* 2013.03.06 | 박현아 추가 | 이미지 박스로 지도 영역 들어갈 경우 */
+.box_info.type2 .box_desc.geo {margin:30px;}
+.box_info.type2 .box_desc.geo .geo_area {float:left; width:270px; height:151px;}
+.box_info.type2 .box_desc.geo .box_cont {width:378px; margin-bottom:0; margin-left:20px;}
+.box_info.type2 .bul_5dep_list>li {background:url(/front/img/com/bul_squ5_list.png) 0 8px no-repeat; padding-left:8px;}
+/* 이미지알림박스 */
+.box_info.type2	.box_desc .desc {margin-top:0;}
+.box_info.type2 .box_desc {width:658px; padding:29px 40px 33px; border:1px solid #e6e6e6;}
+.box_info.type2 .box_desc.type2 {padding:30px;}
+.box_info.type2.imgtag .box_desc.type2 .box_cont {width:515px;}
+.box_info.type2 .box_desc:after {display:block; content:""; clear:both;}
+.box_info.type2 .box_desc .img_set {float:left; width:132px; padding-top:9px; margin:0 30px 0 0; background:url(/front/img/com/bg_dotline2.png) 100% 0 repeat-y;}
+.box_info.type2 .box_desc .img_set .thumb {min-width:100px; min-height:100px;}
+.box_info.type2 .box_desc .box_cont {float:left; width:494px; margin-left:0;}
+.box_info.type2 .box_desc .box_cont dt {font-family:Malgun Gothic, dotum; font-weight:bold; font-size:14px; color:#262626; margin-bottom:14px;}
+.box_info.type2 .box_desc .box_cont .desc {padding:0 0px 1px 0; background:none; font-size:12px; line-height:20px; color:#454545;}
+.box_info.type2 .box_desc .box_cont .desc.type02 {margin-bottom:9px;}
+.box_info.type2 .box_desc .box_cont .btn {margin:3px 0 -2px 0;}
+/* 2013.02.20 l조성미 추가l 블릿체계변경되면서 수정 */
+.box_info.type2 .box_desc .box_cont .bul_5dep_list {}
+.box_info.type2 .box_desc .box_cont .bul_5dep_list li {line-height:18px; margin-bottom:9px;}
+.box_info.type2 .box_desc .box_cont .bul_5dep_list {margin-bottom:0;}
+.box_info.type2 .box_desc .box_cont .bul_5dep_list li {margin-bottom:10px;}
+.box_info.type2 .box_desc .box_cont.ctg dl {padding-left:10px;}
+.box_info.type2 .box_desc .box_cont.ctg dt {font-size:17px;}
+/* -타이틀 아래 도트라인 */
+.box_info.type2.emblem .box_desc .box_cont dt {padding-bottom:20px; font-size:16px; background:url(/front/img/com/bul_dot_d6.gif) 0 100% repeat-x;}
+/* -의미없는 이미지를 사용했을때 */
+.box_info.type2.emblem2 .box_desc .img_set {padding-right:9px;}
+.box_info.type2.emblem2 .box_desc {width:598px; padding:64px 70px 69px;}
+.box_info.type2.emblem2 .box_desc .box_cont {width:455px;}
+/* .box_info.type2.emblem2 .box_desc .box_cont {width:420px;} */
+/* 2013.04.01 | 김미선추가 | emblem2일때 우측 여백 및 타이틀 폰트사이즈 수정 */
+.box_info.type2.emblem2 .box_desc .img_set {padding-top:0; margin:0;}
+.box_info.type2.emblem2 .box_desc .box_cont dt {font-size:17px;}
+
+/* 2013.04.26 | 김미선 | 수요관리 엠블럼 추가 */
+.box_info.type2.emblem3 .box_desc {padding:30px;}
+.box_info.type2.emblem3 .box_desc .img_set {padding-right:9px;}
+.box_info.type2.emblem3 .box_desc .box_cont {width:455px;}
+.box_info.type2.emblem3 .box_desc .img_set {padding-top:0; margin:0;}
+.box_info.type2.emblem3 .box_desc .img_set.marg_type01 {margin-right:35px; margin-bottom:-15px;}
+.box_info.type2.emblem3 .box_desc .box_cont dt {padding-bottom:20px; font-size:16px; background:url(/front/img/com/bul_dot_d6.gif) 0 100% repeat-x;}
+
+/* -이미지태그사용할 경우 */
+.box_info.type2.imgtag .box_desc .img_set {background:none; width:auto; border:5px solid #f5f5f5;}
+.box_info.type2.imgtag .box_desc .box_cont {width:440px;}
+.box_info.type2.imgtag .box_desc.has_line .img_set {background: url(/front/img/com/bg_dotline2.png) 100% 0 repeat-y; padding-top:0; padding-right:30px; border:none;}
+.box_info.type2.imgtag .box_desc.has_line .img_set p.thumb {margin:0; border:5px solid #f5f5f5;}
+/* -이미지태그사용할 경우 */
+.box_info.type2 .box_desc .img_set.bgnon {background:none;}
+.box_info.type2 .box_desc .img_set p.thumb {background: url(/front/img/com/img_ico_recruit.png) 0 0 no-repeat;}
+.box_info.type2 .box_desc .img_set .thumb.img_recruit1 {background-position: -152px 0;}
+.box_info.type2 .box_desc .img_set .thumb.img_recruit2 {background-position: -470px 0; }
+.box_info.type2 .box_desc .img_set .thumb.img_recruit3 {background-position: -630px 0;}
+.box_info.type2 .box_desc .img_set .thumb.img_recruit4 {background-position: 0 0;}
+.box_info.type2 .box_desc .img_set .thumb.img_recruit5 {background-position: -300px 0;}
+/* -check 형태일 경우 */
+.box_info.type2.check_sort {width:740px;}
+.box_info.type2.check_sort .info_desc {/*width:100%;*/ zoom:1; padding:25px 30px 11px 29px;}/* 2013.03.06 | 박현아 삭제 | 100%시 컨텐츠 너비 넘어감 */
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list {width:100%; margin:0;}
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list:after{display:block; content:""; clear:both;}
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list dt.tit {float:left; background:url(/front/img/com/bul_squ_list.png) 0 10px no-repeat; padding-left:8px; color:#262626; font-weight:bold; line-height:22px;}
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list dd {float:left; padding-left:30px;}
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list dd ul {float:left; width:589px; padding-bottom:14px;}
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list dd ul li {line-height:22px;}
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list dd ul li input {margin-right:3px;}
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list dd ul.kind_list {}
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list dd li:first-child ul.type2 {padding-bottom:14px;} /* 2013.03.06 | 박현아 추가 | 디자인 추가 */
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list dd ul.type2 {margin-left:20px; padding-bottom:0;} /* 2013.03.06 | 박현아 추가 | 디자인 추가 */
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list.dotline_box {margin-bottom:10px;} /* 2013.03.06 | 박현아 추가 | 라인 디자인 추가 */
+.box_info.type2.check_sort .info_desc dl.bul_5dep_list.dotline_box dd{padding-bottom:16px;} /* 2013.03.06 | 박현아 추가 | 라인 디자인 추가 */
+/* -float해제할 경우 */
+.box_info.type2.nofloat .box_desc {}
+.box_info.type2.nofloat .box_desc .img_set,
+.box_info.type2.nofloat .box_desc .box_cont {float:none; background:none; width:100%; margin:0; text-align:center;}
+.box_info.type2.nofloat .box_desc .img_set .thumb {width:auto;}
+/* -float해제할 경우 dotlinebox가 들어올경우 */
+.box_info.type2.nofloat2 .box_desc {padding-bottom:6px;}
+.box_info.type2.nofloat2 .box_desc .img_set {float:none; background:none; width:100%; margin:0; text-align:center;}
+.box_info.type2.nofloat2 .box_desc .img_set .thumb {width:auto;}
+.box_info.type2.nofloat2 .box_desc .box_cont {float:none; width:100%;}
+.box_info.type2.nofloat2 .box_desc .dotline_box {margin-bottom:25px; padding-bottom:20px;}
+
+
+/* 2013.03.06 l조성미 추가l 접수단계 step */
+.accept_box {}
+.accept_box .thumb {background:url(/front/img/com/accept_step_bg.png) 0 0 no-repeat; width:209px; height:17px;}
+/* 전국사업소 */
+.accept_box .thumb.step1 {background-position:0 0;}
+.accept_box .thumb.step2 {background-position:0 -40px;}
+.accept_box .thumb.step3 {background-position:0 -80px;}
+.accept_box .thumb.step4 {background-position:0 -250px;}
+
+
+/* 로그인 입력필드 공통 */
+.field_box  {position:relative;}
+.field_box dl {width:100%; zoom:1;}
+.field_box dl:after {content:""; display:block; clear:both;}
+.field_box dl dt {float:left;}
+.field_box dl dt {margin-bottom:6px; font-family:Malgun Gothic, dotum; vertical-align:middle;}
+.field_box dl dt label {font-size:14px; font-weight:bold; letter-spacing:-1px;}
+.field_box dl dd {width:215px; margin-bottom:6px;}
+.field_box dl dd {float:left;}
+.field_box .btn_bbs {position:absolute;}
+
+/* 페이지 만족도 설문조사 - 공통인지는 아직 확인해야함 */
+.properly_box {margin-bottom:50px;}
+.properly_box dt {background:url(/front/img/com/ico_question.png) 0 0 no-repeat; height:30px; padding-left:30px; color:#1479c7; font-size:14px; font-weight:bold; font-family:Malgun Gothic,dotum; line-height:20px; letter-spacing:-1px;}
+.properly_box dd {width:100%; border-top:1px solid #e0e0e0; border-bottom:1px solid #e0e0e0; zoom:1;}
+.properly_box dd:after {content:""; display:block; clear:both;}
+.properly_box dd ul.kind_list {float:left; width:644px; padding-left:28px;}
+.properly_box dd ul.kind_list li {height:44px; margin-bottom:0;}
+.properly_box dd ul.kind_list li label {line-height:44px;}
+.properly_box dd ul.kind_list li.etc {height:auto; padding-bottom:15px;}
+.properly_box dd ul.kind_list li.etc label {background:url(/front/img/com/bul_squ5_list.png) 0 4px no-repeat; padding:0 0 0 8px; margin-right:10px; color:#606060; line-height:18px;}
+.properly_box dd ul.kind_list li.etc input {width:400px;}
+.properly_box dd .btn_srch {float:left; background:url(/front/img/com/bul_dotline_ca.gif) 0 10px no-repeat; padding:10px 0 0 9px; margin:35px 0 0 -12px;}
+.properly_box dd .btn_srch a {padding-left:4px; margin-top:-1px;}
+.properly_box dd .btn_srch a span {width:30px; padding-right:5px;}
+
+/* 사용여부 설명글 */
+.dotline_con {background:url(/front/img/com/bg_dotline.png) 0 100% repeat-x; padding-bottom:30px;}
+.dotline_con .btn_bbs {margin-bottom:0; text-align:center;}
+.dotline_con .txt_msgdsc {padding:15px 0 16px; text-align:center; font-weight:bold; line-height:20px;}
+.dotline_con .tbline {background:url(/front/img/com/bg_dotline.png) 100% 0 repeat-x; padding:47px 0 16px;}
+.dotline_con.list {padding:0;}
+.dotline_con.list .tbline {padding:17px 0 11px;}
+.dotline_con.list .tbline ul.kind_list {}
+.dotline_con.list .tbline .kind_list li {float:none; margin-left:30px;}
+.dotline_con.list .tbline .bul_5dep_list li {margin-left:30px;}
+.dotline_con.list .tbline .kind_list li label {display:inline-block; width:60px;}
+.dotline_con.list .tbline .bul_5dep_list li span {display:inline-block; width:60px;}
+
+/* 자주하는 질문 */
+/* 스텝 */
+.step_wrap li {padding:15px 0;background:url(/front/img/com/bg_stepline.png) no-repeat top center;}
+.step_wrap li:first-child {background:none; padding-top:0;}
+.step_wrap span.txt_step {display:block; font-family: Arial; color:#1479c7; font-weight:bold; font-size:11px;}
+/* cs faq */
+.cs_faq ul {margin:0; padding:0;}
+.cs_faq .box_desc {background:url(/front/img/com/bg_dotline2.png) repeat-y 475px 0;}
+.cs_faq .best5 {width:445px; position:relative;}
+.cs_faq .useguide {width:228px; margin-bottom:-15px;}
+.cs_faq .best5, .cs_faq .useguide {float:left;}
+.cs_faq .best5 dt, .cs_faq .useguide dt {color: #262626; font-size: 14px; font-weight: bold; margin-bottom: 14px; font-family:Malgun Gothic,dotum;}
+.cs_faq .useguide .ico_mark {height:29px; margin-left:10px; padding-top:5px; padding-left:60px; font-family:Malgun Gothic,dotum;}
+.cs_faq .useguide dt,
+.cs_faq .useguide dd {padding-left:30px;}
+.cs_faq .useguide .step {width:202px; height:100px; background:url(/front/img/com/bg_cs_step.png) no-repeat 0 0;}
+
+/* popup */
+/* 우편번호찾기 */
+.zipcode_find .txt_dsc p {margin-top:10px;}
+.zipcode_find .txt_dsc p:first-child {margin-top:0;}
+.zipcode_find .box_search .td_cont span.label {margin-right:7px;}
+/* 2013.04.11 ㅣ조성미 수정ㅣ 팝업 영역분리가 안됨 */
+.zipcode_find .zipcode_newfind {margin-top:0;}
+/* .zipcode_find .zipcode_newfind {margin-top:-32px;} */
+.zipcode_find .zipcode_newfind .box_search {background:#fff; margin-top:10px; border-top:1px #f1f1f1 solid; border-bottom:1px #f1f1f1 solid;}
+.zipcode_find .zipcode_newfind input[title*=건물번호] {width:60px;}
+.zipcode_find .zipcode_newfind .td_cont.buildNum {padding-top:10px;}
+.zipcode_find .zipcode_box {overflow-y:auto; overflow-x:hidden; width:415px; height:181px; padding:15px 10px 15px 19px; margin-top:-10px; border:1px #e0e0e0 solid;}
+.zipcode_find .zipcode_box ul {width:398px;}
+.zipcode_find .zipcode_box li {position:relative; width:382px; line-height:18px; padding:1px 8px 0;}
+.zipcode_find .zipcode_box li:hover {background:#f2f9ff;}
+.zipcode_find .zipcode_box li span {display:inline-block; }
+.zipcode_find .zipcode_box li .zipcode_num {position:absolute; left:0; top:0; width:60px;}
+.zipcode_find .zipcode_box li .zp_address {width:306px; padding:0 24px 0 52px;}
+.zipcode_find .zipcode_box li .zp_choice {position:absolute; right:0; top:0;}
+.zipcode_find .zipcode_box .no_data {line-height:180px; border:none;}
+.zipcode_find .zipcode_box .no_data:hover {background:#fff;}
+.zipcode_find .zipcode_oldfind .conSection {margin-bottom:30px;}
+.zipcode_find .zipcode_oldfind .wrap_form_srch {margin-bottom:22px;}
+.zipcode_find .zipcode_box.new li .zipcode_num {width:75px;}
+.zipcode_find .zipcode_box.new li .zp_address {width:291px; padding-left:75px;}
+
+/* 2013.03.06ㅣ강완추가ㅣ 지도 */
+/*.map_srch{height:363px;border-top:1px solid #1579c7;border-bottom:1px solid #e1e1e1;margin-bottom:44px;margin-top:48px}*/
+.map_srch {border-top:1px solid #1579c7;margin-bottom:44px;margin-top:48px; *zoom:1;}
+.map_srch.type02 {border:0;}
+.map_srch:after {display:block; content:""; clear:both;}
+
+/* 2013.04.09 | 김미선 | ars 영역추가됨 */
+.map_srch .ars_info {clear:both; padding:15px 0; border-top:1px solid #e1e1e1; border-bottom:1px solid #e1e1e1;}
+.ars_info>p {float:left; margin-left:30px;}
+.ars_info>.ars_txt {margin-left:82px;}
+.ars_info>.ars_txt strong {font-family:Malgun Gothic; font-size:14px; color:#262626; letter-spacing:-1px;}
+.ars_info>.ars_txt strong span {font-size:17px; color:#ed1c24;}
+.ars_info>.ars_txt ul {margin:0 0 0 23px;}
+.ars_info>.ars_txt strong, .ars_info>.ars_txt ul, .ars_info>.ars_txt li {float:left; line-height:40px;}
+.ars_info>.ars_txt li {background-position:0 19px; margin-left:10px; line-height:43px;}
+.ars_info>.ars_txt li:first-child {margin:0;}
+.ars_info>.ars_txt li a {margin-left:5px;}
+
+.map_srch_01 {background:url(/front/img/com/bul_dotline_d6.gif) 100% 0 repeat-y; width:417px; height:408px; float:left;}
+.map_srch_01.prime_area {width:100%; border:0;}
+.wrap_map_srch_01 {width:384px; height:388px;padding:22px 0 0 30px; margin:0 auto;} /* 04.26 width:292px; 강완 */
+.map_srch_01.prime_area .wrap_map_srch_01 {width:100%; height:304px; padding:0 0 0 30px; margin:0 auto; padding-left:0;}
+.map_srch_01.prime_area .wrap_map_srch_01 .img_cymbpp005 {width:100%; margin:0 auto; padding-left:0;} /* 04.26 border-top:1px solid #ecebeb; 삭제 강완  */
+.map_srch_01.prime_area .wrap_map_srch_01 .img_cymbpp005 img {display:block; margin-left:265px;}/* 04.24 margin:0 auto 제거 송경환 04.25 margin 추가 강완 */
+.map_srch_01.prime_area .wrap_map_srch_01 .h2tit {margin-bottom:37px;}
+.img_cymbpp005{width:220px;height:364px;padding-left:72px;margin-top:-42px;}/* 04.29 송경환 지도 수정 */
+.map_srch_02{width:322px;height:373px;float:left;overflow:hidden;}
+.wrap_map_srch_02{padding:24px 0 0 30px;}
+.wrap_map_srch_02 .h2tit {margin-bottom:21px}
+.map_txt_dsc{margin:-7px 0 0px; line-height:22px;}
+.wrap_map_form{width:262px;padding:14px 0 0 0;}
+.wrap_map_form .box_search{width:205px;padding:30px 24px 0px 33px;background:none;background-color:#f1f1f1;}
+.map_srch_table{width:202px;}
+.map_srch_table th, .map_srch_table td{text-align:left;}
+.map_srch_table th span{display:block;padding:0 0 0 9px; background:url(/front/img/com/bul_squ_list.png) 0 5px no-repeat;line-height:12px}
+.map_srch_table td{padding:13px 0 21px 0;line-height:12px;}
+.map_srch_table td:first-child{padding:10px 0 19px 0;}
+.map_srch_table td .td_cont span{display:block;padding:12px 0 10px 0; color:#606060;}
+.box_search .map_srch_table td .keyword_list {margin-bottom:9px;}
+.wrap_map_srch_02 .btn_bbs {margin-top:43px; margin-bottom:0;}
+input.keyword3{width:190px;}
+.keyword_list{width:100%; *zoom:1;}
+.keyword_list li{float:left;}
+.keyword_list:after {display:block; content:""; clear:both;}
+.keyword_list:first-child li{margin:0 16px 0 2px;}
+.wrap_map_srch_02 a.btnRe{padding-left:47px}
+.wrap_map_srch_02 a.btn_set span{padding-right:47px; }
+
+/* 신문고 ,고객지원,회사소개-전국사업소 */
+.sin_process .dotline_box {padding:0; margin-top:-5px;}
+/* 2013.05.02 l 조희욱 추가 l 전국사업소 신문고 h3밑에  도트 라인 삭제 */
+.sin_process .dotline_box .sin_list {padding:10px 0 15px 0;}
+.sin_process .dotline_box .sin_list ul {margin-bottom:0;}
+
+
+/* 2013.03.15 l 조성미 추가 l 섹션메인 가이드 */
+.section_wrap {background:url(/front/img/com/line_roundBl.gif) left top no-repeat; padding-top:5px; margin-top:30px;}
+.section_wrap .section_cont {background:url(/front/img/com/line_roundGy.gif) left bottom no-repeat; width:660px; padding:0 40px 5px;}
+/* 상단 */
+.section_wrap .section_cont .user_box {}
+.section_wrap .section_cont .user_box .img_set {width:628px; padding:0 0 0 32px; margin-bottom:0; color:#313131; text-align:left; word-break:break-all;}
+.section_wrap .section_cont .user_box .img_set .thumb {padding-top:62px; background:url(/front/img/test.jpg) right top  no-repeat;}
+.section_wrap .section_cont .user_box .img_set .thumb .section_txt {background:url(/front/img/mypage/quot.gif) 0 -4px no-repeat; padding:0 0 15px 15px;}
+.section_wrap .section_cont .user_box .img_set .thumb .section_txt .kname {display:inline-block; margin-bottom:5px; font-family:Malgun Gothic; font-size:42px; font-weight:bold; letter-spacing:-2px; line-height:45px; padding:3px 1px 3px 0;}
+.section_wrap .section_cont .user_box .img_set .thumb .section_txt .txt01 {display:inline-block; position:relative; left:0; top:18px; background: url(/front/img/mypage/mytxt01.png) 6px 0 no-repeat; width:101px; height:32px; vertical-align:top;}
+.section_wrap .section_cont .user_box .img_set .thumb .section_txt .txt02 {background:url(/front/img/mypage/mytxt02.png) 0px 0 no-repeat; width:186px; height:36px; margin:5px 0 0 5px;}
+.section_wrap .section_cont .user_box .img_set .thumb .section_txt .section_small_txt {background:url(/front/img/mypage/img_myaapp001_02.gif) 0 0 no-repeat; width:234px; height:26px; margin:11px 0 0 9px; color:#6e6e6e;}
+/* 중간 공통 */
+.section_box {position:relative; width:100%; margin-bottom:20px; *zoom:1;}
+.section_box:after {display:block; content:""; clear:both;}
+.section_box span.top_left,.section_box span.top_right,.section_box span.bottom_left,.section_box span.bottom_right {position:absolute; background:url(/front/img/section_table_bg.gif); width:10px; height:10px;}
+.section_box span.top_left {top:0; left:0; background-position:0 0;}
+.section_box span.top_right {top:0; right:0; background-position:100% 0;}
+.section_box span.bottom_left {bottom:0; left:0; background-position:0 100%;}
+.section_box span.bottom_right {bottom:0; right:0; background-position:100% 100%;}
+.section_box .h2tit {background-color:#f2f9ff; height:27px; padding:13px 0 0 19px; margin-bottom:0; border:1px solid #bccedc; border-bottom:0; color:#1d69a3; font-family:dotum; font-size:14px;}
+.section_box .section_desc {width:658px; border:1px solid #bccedc; border-top:none; *zoom:1;}
+.section_box .section_desc:after {display:block; content:""; clear:both;}
+.section_box a.ico_direct {position:absolute; top:16px; right:19px;}
+.section_box a.ico_direct span {text-decoration:none;}
+.section_box .section_desc {padding:12px 0 15px 0;}
+.section_box .section_desc .wrap_table {border-top:none;}
+.section_box .section_desc table th span {padding-left:19px; font-weight:bold; color:#797979;  font-family:Malgun Gothic, dotum;}
+.section_box .section_desc table th span.pointBl {font-size:15px; font-weight:bold; color:#2f5b7e; letter-spacing:-2px;}
+.section_box .section_desc table th,
+.section_box .section_desc table td {line-height:24px;}
+.section_box .section_desc table td {width:121px; padding-right:18px; text-align:right; border-right:1px solid #ecebeb;}
+.section_box .section_desc table td .td_cont span {padding-right:3px; font-family:Malgun Gothic, dotum; font-weight:bold; font-size:20px;}
+.section_box .section_desc table td .td_cont.txt1 span {font-weight:normal; font-size:14px;}
+/* 중간 */
+.section_info {width:100%; margin-bottom:38px; *zoom:1;}
+.section_info:after {display:block; content:""; clear:both;}
+.section_info .section_box {float:left;}
+.section_info .section_box .section_desc {min-height:111px; width:318px; padding:13px 0 15px; border-top:0;}
+.section_info .section_box dl.section_desc dt span {padding-left:19px; font-weight:bold; color:#797979;  font-family:Malgun Gothic, dotum;}
+.section_info .section_box dl.section_desc dt span.pointBl {font-size:15px; font-weight:bold; color:#2f5b7e; letter-spacing:-2px;}
+.section_info .section_box dl.section_desc dt, 
+.section_info .section_box dl.section_desc dd {float:left; padding:21px 0 18px 0; line-height:18px;}
+.section_info .section_box dl.section_desc dd {background:url(/front/img/mypage/mykepco_box_var.gif) 100% 20px no-repeat; width:121px; padding-right:18px; text-align:right;}
+.section_info .section_box dl.section_desc dd {padding-right:3px; font-family:Malgun Gothic, dotum; font-size:20px;}
+.section_info .section_box dl.section_desc dd.txt1 {font-size:11px;}
+.section_info .section_box dl.section_desc dd.txt1 span {font-weight:normal; font-size:14px;}
+.section_info .section_box dl.section_desc dd.txt3 {background:none; width:121px; padding-right:0; color:#d72c34;}
+.section_info .section_box {width:320px; margin:0 20px 0 0;}
+.section_info .section_box.type03 {margin-right:0;}
+.section_info .section_box.type03 .section_desc {padding:0 0 9px;}
+.section_info .section_box dl.section_desc dt {width:85px; padding:0; font-family:Malgun Gothic, dotum; line-height:22px;}
+.section_info .section_box dl.section_desc dd {background:url(/front/img/mypage/mykepco_box_var02.gif) left 7px no-repeat; width:212px; padding:0 0 0 12px; font-size:12px; line-height:22px; text-align:left; word-break:break-all;}
+.section_info .section_box dl.section_desc dd.type05 {overflow:hidden; height:40px;}
+.section_menu {width:254px; padding:25px 32px; *zoom:1;}
+.section_menu:after {display:block; content:""; clear:both;}
+.section_menu li {float:left; width:84px; height:79px;}
+.section_menu li a {display:block; background:url(/front/img/mypage/img_myaapp001_03.gif) 0 0 no-repeat; width:84px; height:79px;}
+.section_menu li .img_myaapp001_01 a {background-position:5px 0;}
+.section_menu li .img_myaapp001_02 a {background-position:-88px 0;}
+.section_menu li .img_myaapp001_03 a {background-position:-180px 0;}
+/* 하단 */
+ul.banner_box {width:660px; padding:0 0 50px; *zoom:1;}
+ul.banner_box:after {display:block; content:""; clear:both;}
+ul.banner_box>li {position:relative; float:left; width:320px; padding-left:10px;}
+ul.banner_box>li a.ico_direct {position:absolute; right:30px; top:32px;}
+ul.banner_box>li a.ico_direct span {text-decoration:none;}
+ul.banner_box>li dl {background:url(/front/img/com/bul_dot_col.gif) 10px 0 repeat-x; padding:20px 0 9px;}	
+ul.banner_box>li dl dt {width:320px; padding:9px 0;}
+ul.banner_box>li dl dt > span {color:#232323; font-family:Malgun Gothic, dotum; font-size:14px; font-weight:bold; letter-spacing:-1px;}
+ul.banner_box>li dl dd {width:307px; padding:6px 0 13px; line-height:21px; word-break:break-all; letter-spacing:-1px}
+/* 2013.04.11 | 김미선 | 전국사업소 섹션메인 사회공헌부분 변경으로 내용추가 */
+ul.banner_box>li dl dd.officeSM {padding:0;}
+ul.banner_box>li dl dd.officeSM .bul_5dep_list {margin-bottom:0;}
+ul.banner_box>li dl dd.officeSM .bul_5dep_list li {zoom:1;}
+ul.banner_box>li dl dd.officeSM .bul_5dep_list li:after {clear: both; content: ""; display: block;}
+ul.banner_box>li dl dd.officeSM .bul_5dep_list li a {float:left; width:185px;}
+ul.banner_box>li dl dd.officeSM .bul_5dep_list li span.date {float:right; padding-right: 18px;}
+ul.banner_box>li dl dd.officeSM .bul_5dep_list li a:hover {text-decoration:underline;}
+
+ul.banner_box li.type02 {background:url(/front/img/com/bul_dot_row.gif) repeat-y; padding:0 10px 0 0;}
+ul.banner_box li.type02 dl {width:291px; padding-left:29px;}
+ul.banner_box li.type02 dl dd {width:278px;}
+ul.banner_box li.type02 a.ico_direct {right:10px;}
+ul.banner_box li.first a.ico_direct {top:6px}
+ul.banner_box li.first dl {background:none; padding-top:0;}
+ul.banner_box li.first dl dt {padding-top:0}
+ul.banner_box li.last dl {border:0}
+ul.banner_box li.last dl dd {padding-bottom:0;}
+
+.section_desc .bul_5dep_list li a:hover {text-decoration:underline;}
+
+/* 작성 사진등록 */
+.img_box {width:100%; *zoom:1; padding-bottom:30px; border-bottom:1px solid #ecebeb;}
+.img_box:after {display:block;  content:"";  clear:both;}
+.img_box .img_set {float:left; padding-right:20px;}
+.img_box .wrap_cont {float:left; width:555px; padding-top:10px;}
+.img_box .wrap_cont .ico_file {padding-left:0;}
+.img_box .wrap_cont .ico_file a span:first-child {background:none; padding-left:0; text-decoration:none;}
+.img_box .wrap_cont .txt {padding-bottom:16px;}
+.img_box .wrap_cont .img_slt {width:100%; *zoom:1;}
+.img_box .wrap_cont .img_slt:after {display:block;  content:"";  clear:both;}
+.img_box .wrap_cont .img_slt li {float:left; padding:0 5px;}
+.img_box .wrap_cont .img_slt li:first-child {padding-right:5px; padding-left:0;}
+.img_box .wrap_cont .img_slt li dl dt {position:relative; text-align:center; padding-left:10px; padding-bottom:4px; line-height:1.5;}
+.img_box .wrap_cont .img_slt li dl dt input {position:absolute; left:0; top:1px;}
+
+/* 기술응모 */
+.bbs_box_thec {position:relative;}
+.bbs_box_thec dl {border-top:1px solid #ececec;} 
+.bbs_box.bbs_box_thec .bbs_view dl.view dt {border-top:0;}
+.bbs_box_thec dd.txt_date {position:absolute; right:26px; top:15px; font-size:11px; color:#606060;}
+.table_info th .rc_photo.rc_photo2 {margin:0;}
+.table_info th .rc_photo.rc_photo2 dl {padding:0;}
+.table_info th .rc_photo.rc_photo2 dl dd img {text-align:left;}
+
+/*  본부소개 > 지사현황 서브탭 메뉴 수정  */
+.office_lst {margin-bottom:72px;}
+.office_lst .sub_layer > li {background-position:0 2px;}
+.office_lst .sub_layer > li a {display:inline-block; padding-bottom:15px; vertical-align:top;}
+.office_lst .sub_layer > li.sub_on a {padding-bottom:7px;}
+:root .office_lst .sub_layer > li.sub_on a {padding-bottom:5px\9;} /*IE9 HACK */
+
+/* 2013.04.23 | 김미선 | 약관내용 추가 */
+.non_mem_term {}
+.non_mem_term ol > li > .txt_dsc, .cyber_term ol > li > .txt_dsc, .sports_cs_term ol > li > .txt_dsc {line-height:22px; margin:4px 0;}
+
+/* 2013.04.25 | 조성미 | 전력수급현황 */
+.power_wrap .power_cont {width:100%; *zoom:1;}
+.power_wrap .power_cont:after,
+.power_wrap .power_cont .graph_list:after {content:""; display:block; clear:both;}
+.power_wrap .power_cont .graph {float:left; width:170px; }
+.power_wrap .power_cont .graph_list {float:left; width:126px;}
+.power_wrap .power_cont .graph_list li {position:relative; width:50px; padding-right:76px; color:#444; font-family:Malgun Gothic, dotum; line-height:22px;}
+.power_wrap .power_cont .graph_list li.point {font-weight:bold;}
+.power_wrap .power_cont .graph_list li span {display:block; position:absolute; right:0; top:0;}
+.power_wrap .power_cont.col_00aaf9 .graph_list li.point {color:#00aaf9;}/* 1.정상 */
+.power_wrap .power_cont.col_60a969 .graph_list li.point {color:#60a969;}/* 2.준비 */
+.power_wrap .power_cont.col_00c9e3 .graph_list li.point {color:#00c9e3;}/* 3.관심 */
+.power_wrap .power_cont.col_ffc016 .graph_list li.point {color:#ffc016;}/* 4.주의 */
+.power_wrap .power_cont.col_ff7200 .graph_list li.point {color:#ff7200;}/* 5.경계 */
+.power_wrap .power_cont.col_ff3d33 .graph_list li.point {color:#ff3d33}/* 6.심각 */
+.power_wrap .reset_box {position:absolute; right:28px; top:16px; font-family:Malgun Gothic, dotum; line-height:27px; letter-spacing:-1px;}
+.power_wrap .reset_box a.ico_reset {display:inline-block; background:url(/front/img/com/ico_reset.png) 0 0 no-repeat; width:27px; height:27px; vertical-align:middle;}
+.power_wrap #g1 {display: inline-block; width:170px; height:120px; margin:-30px 0 0 0;}
+
+/* 업무찾기 */
+.table_info td div.view_cont.td.cont {margin:30px 20px;}
+
+/* 2013.04.26 | 송경환 | 화이트.그레이 이중박스 수정추가 */
+.collabo_box .box_lineGy {background:url(/front/img/company/bg_coabhp002.png) 0 0 no-repeat;}
+.collabo_box .box_lineGy dt {padding:10px 28px 8px; font-family:dotum, Tahoma,arial; font-size:12px;}
+.collabo_box .box_lineGy dd {padding:14px 28px 10px; color:#606060; line-height:18px;}
+#moveTab07.conSection.collabo_box .box_lineGy p.txt_dsc {margin-bottom:5px; color:#606060; line-height:20px;}
+
+/* 2013.05.01 강완 전국사업소 게시판 버튼 마진 바텀 초기화 */
+.wrap_form_srch .btn_bbs.marg_type02 {margin-bottom:0;}
+
+/* 2013.05.04 | 김미선 | 프라임보이스 서비스 로그인결과 */
+.primevoice_rult {margin:23px 30px;}
+.primevoice_rult li {position:relative; margin-top:6px; line-height:2em;}
+.primevoice_rult li:first-child {margin:0;}
+.primevoice_rult li > span {display:inline-block; background:url(/front/img/mypage/primevoice.gif) 0 6px no-repeat; padding-left:30px;}
+.primevoice_rult li > span:first-child {}
+.primevoice_rult li > span.csnum {background-position:0 -34px; width:151px; padding-left:7px;}
+.primevoice_rult li > span.csname {width:101px;}
+.primevoice_rult li > span.csphone {width:231px;}
+.primevoice_rult li > span.csjoinok {position:absolute; top:50%; right:0; margin-top:-11px; background:none; width:116px; height:22px; padding:0; line-height:2.2em; *line-height:22px; text-align:center; color:#fd0101; font-size:11px; font-weight:bold; border:1px #e0e0e0 solid;}
+
+
+/* sitemap */
+.sitemap_con {padding-top:10px;}
+.sitemap_con h2 {color:#1479c7; font-size:17px; font-weight:bold;}
+.sitemap_con div.menu1 {margin-top:10px; border-top:2px solid #1479c7; border-bottom:1px solid #1479c7; overflow:hidden;}
+.sitemap_con div.menu2 {margin-bottom:38px; border-bottom:1px solid #1479c7; overflow:hidden;}
+.sitemap_con div.menu3 {margin-top:10px; border-top:2px solid #1479c7; border-bottom:1px solid #1479c7; overflow:hidden;}
+.sitemap_con div.menu4 {border-bottom:1px solid #1479c7; overflow:hidden;}
+.sitemap_con dl {width:215px; float:left; padding:38px 0 33px 30px; background:url(/sangsi/front/img/com/bul_dot_row.gif) right top repeat-y; overflow:hidden;}
+.sitemap_con dl.line_none {background:none;}
+.sitemap_con dl dt {padding-left:16px; margin-bottom:26px; background:url(/sangsi/front/img/com/bul_squ3_list.png) 0 2px no-repeat; font-weight:bold; color:#1479c7; font-size:14px; display:block;}
+.sitemap_con dl dd {background:url(/sangsi/front/img/com/bul_squ4_list.png) 0 8px no-repeat; padding-left:10px; margin-left:7px; line-height:22px; color:#454545;}
+.sitemap_con div.menu2 dl {padding-bottom:30px;}
+.sitemap_con div.menu4 dl {padding-bottom:10px;}

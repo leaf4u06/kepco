@@ -1,0 +1,885 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>KEPCO 채용</title>
+<link rel="stylesheet" type="text/css" href="https://recruit.kepco.co.kr:444/front/com/css/cm.import.css" />
+<link rel="stylesheet" type="text/css" href="https://recruit.kepco.co.kr:444/front/com/css/kepcointro.css" />
+<link rel="stylesheet" type="text/css" href="https://recruit.kepco.co.kr:444/front/com/css/company.css" />
+	
+<script type="text/javascript" src="https://recruit.kepco.co.kr:444/front/com/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="https://recruit.kepco.co.kr:444/front/com/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="https://recruit.kepco.co.kr:444/front/com/js/jquery.cm.design.js"></script>
+<script type="text/javascript" src="https://recruit.kepco.co.kr:444/front/com/js/jquery.cm.ui.js"></script>
+
+<script type="text/javascript" src="https://recruit.kepco.co.kr:444/js/menuControlTab.js"></script>
+<script type="text/javascript" src="https://recruit.kepco.co.kr:444/js/common.js"></script>
+<script type="text/javascript" src="https://recruit.kepco.co.kr:444/js/recruitTab.js"></script>
+<script type="text/javascript" src="https://recruit.kepco.co.kr:444/js/recruitTab_common.js"></script>
+
+
+
+<script type="text/javascript">
+<!--
+function fncGoPassResult(eYear, eId, eSeq, passLvl) {
+
+	var f = document.appForm;
+	
+	f.employ_year.value = eYear;
+	f.employ_id.value = eId;
+	f.employ_seq.value = eSeq;
+	f.passLvl.value = passLvl;
+/*
+	f.action = "/Check.html";
+	f.method.value = "kepco_common";
+	f.txCode.value = "JOB0203010";
+	f.forward.value = "job020301";
+	f.sessionCheck.value = "Y";
+	f.action_return.value = "N";
+	f.target = "mainFrame";
+	f.submit();
+*/
+
+	if((eYear == "2017")&&(eId == "4")){
+		if (userLogin == "N") {
+			menuGo("JOB0203000", "job020300", "Y", "N");
+			return;
+		} 
+
+		window.open("", "poppassintern","left=10,top=10,width=450,height=350");
+		f.action = "/popup/poppassintern.jsp";
+		f.target = "poppassintern";
+		f.submit();
+
+	}else if((eId == "1") || (eId == "E") || (eId == "9") || (eId == "C") || (eId == "5") || (eId == "4")  || (eId == "F") || (eId == "A") || (eId == "3") || (eId == "7")  || (eId == "6") || (eId == "8")  || (eId == "D")){
+		f.action = "/job/job0203010_new.jsp";
+		f.method.value = "kepco_common";
+		f.txCode.value = "JOB0203010";
+		f.forward.value = "job020301";
+		f.sessionCheck.value = "N";
+		f.action_return.value = "N";
+		f.target = "mainFrame";
+		f.submit();
+
+	}else{
+			
+		if (userLogin == "N") {
+			menuGo("JOB0203000", "job020300", "Y", "N");
+			return;
+		} 
+
+		f.action = "/KEPCOCommon.do";
+		f.method.value = "kepco_common";
+		f.txCode.value = "JOB0203010";
+		f.forward.value = "job020301";
+		f.sessionCheck.value = "Y";
+		f.action_return.value = "N";
+		f.target = "mainFrame";
+		f.submit();
+	}
+	
+}
+
+
+
+function fncGoPublish(div, eYear, eId, eSeq, startDt, endDt){
+	var f = document.appForm;
+
+	f.employ_year.value = eYear;
+	f.employ_id.value = eId;
+	f.employ_seq.value = eSeq;
+
+		//alert('발표');
+	window.open("", "Popublish","left=10,top=10,width=450,height=230");
+	f.action = "/popup/popublish.jsp";
+	f.target = "Popublish";
+	f.submit();
+
+
+
+
+}
+
+
+
+//-->
+</script>
+
+</head>
+<body >
+
+<div title="스킵메뉴" class="skipMenu">
+	<a href="#content">본문 내용 바로가기</a>
+	<a href="#gnb">주 메뉴 바로가기</a>
+    <a href="#lnb">왼쪽 메뉴 바로가기</a>
+</div>
+<hr />
+<div id="wrap" class="sub sub_kepcointro">
+	<div class="inbox">
+	
+        <!-- top s -->
+        
+<script type="text/javascript">
+var userLogin = "N";
+</script>
+
+<script type="text/javascript" src="https://recruit.kepco.co.kr:444/front/com/js/navi.js"></script>
+<script type="text/javascript" >
+
+function menu_exipt_go(txCode,forward,sessionCheck,action_return,topmenu,leftmenu){
+	document.appForm.action              = "https://recruit.kepco.co.kr:444/job/job080100.jsp";
+	document.appForm.target              = "mainFrame";	
+	document.appForm.method.value		= "kepco_common";
+	document.appForm.txCode.value		= txCode;
+	document.appForm.forward.value     	= forward;
+	document.appForm.sessionCheck.value	= "N";
+	document.appForm.action_return.value	= "";
+	
+	document.appForm.txCodePrev.value = txCode;
+	document.appForm.forwardPrev.value = forward;
+	document.appForm.sessionCheckPrev.value = sessionCheck;
+	document.appForm.action_returnPrev.value = action_return;
+	
+	document.appForm.submit();
+}		
+
+</script>
+
+<!-- HEADER s -->
+	<div id="header" class="independent">
+   		<div class="utill_box">
+        	<div class="right">
+            	<ul class="depth utill">
+				
+               		<li><a href="javascript:menuGo('MEM0101000','mem010100','N','Y');" target="mainFrame">로그인</a></li>
+               		<li><a href="javascript:menuGo('MEM0201000','mem020100','N','Y');" target="mainFrame">회원가입</a></li> 
+               	
+                   	<li class="userguide_site"><a href="javascript:menuGo('JOB0501000','job050100','N','Y');" target="mainFrame">사이트맵</a></li>
+                   	<li class="business_place"><a href="http://cyber.kepco.co.kr/kepco" target="_blank" class="btn" title="KEPCO 홈페이지 새창열림"><span class="btn_layer">KEPCO 홈</span></a>
+                   	<div class="layer_box">
+                   		<div class="layer_cont">
+                        	<ul>
+                            	<li><a href="http://home.kepco.co.kr/kepco/KE/A/A/KEAAPP001.do?menuCd=FN01" target="_blank" title="회사소개(새창열림)">회사소개</a></li>
+                                <li><a href="http://home.kepco.co.kr/ckepco/" target="_blank" title="사이버지점(새창열림)">사이버지점</a></li>
+                                <li><a href="http://home.kepco.co.kr/kepco/CO/A/A/COAAPP001/main.do?menuCd=FN040101" target="_blank" title="기업센터(새창열림)">기업센터</a></li>
+                                <li><a href="http://home.kepco.co.kr/kepco/KO/A/A/KOAAHP00101.do?menuCd=FN050101" target="_blank" title="지식센터(새창열림)">지식센터</a></li>
+                                <li><a href="http://home.kepco.co.kr/kepco/PR/A/A/PRAAPP001.do?menuCd=FN06" target="_blank" title="홍보센터(새창열림)">홍보센터</a></li>
+                           	</ul>
+                    	</div>
+                 	</div>
+                   	</li>
+               	</ul>
+       		</div>
+		</div>
+
+       <div class="gnb" id="gnb"><!-- 공시채용 gnb -->
+			<div class="depth_tit">
+			  	<p><a class="logo" href="javascript:menuGo('MAIN','main','N','N');" target="mainFrame"><strong class="hide">KEPCO</strong></a></p>
+			  	 <div class="tit_cont sort1"><!-- D/P : 공개채용은 class="sort1" 수시채용은 class="sort2" -->
+			        <a href="http://recruit.kepco.co.kr"  target="_top" class="on" title="선택됨"><span>공개채용</span></a>
+			        <a href="http://recruit.kepco.co.kr/sangsi/index.jsp"  target="_top"><span>수시채용</span></a>
+			    </div>
+			</div>
+           <ul class="depth depth1">
+           
+           		
+			
+				
+          		<li class=""><a href="javascript:menuGo('JOB0101000','job010100','N','N')" target="mainFrame">채용공고</a>
+               		<div class="depth_box box1">
+                       <ul class="sub_meun">
+                           
+                
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0101000','job010100','N','N');" target="mainFrame">채용공고</a></li>
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0102000','job010200','N','Y');" target="mainFrame">채용절차</a></li>
+                           
+                 
+				
+                       </ul>
+                   </div>
+               </li>
+               
+               
+               
+			
+				
+          		<li class="on"><a href="javascript:menuGo('JOB0201000','job020100','N','N')" target="mainFrame">입사지원관리</a>
+               		<div class="depth_box box1">
+                       <ul class="sub_meun">
+                           
+                
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0201000','job020100','N','N');" target="mainFrame">지원서 작성</a></li>
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0202000','job020200','N','N');" target="mainFrame">지원서 수정·삭제</a></li>
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="Check.html" target="mainFrame">전형결과 확인</a></li>
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0701000','job070100','N','N');" target="mainFrame">채용서류 반환 청구</a></li>
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menu_exipt_go('JOB0205010','JOB0205010','N','N');" target="mainFrame">이의신청</a></li>
+                           
+                 
+				
+                       </ul>
+                   </div>
+               </li>
+               
+               
+               
+			
+				
+          		<li class=""><a href="javascript:menuGo('JOB0301000','job030100','N','Y')" target="mainFrame">인사제도</a>
+               		<div class="depth_box box1">
+                       <ul class="sub_meun">
+                           
+                
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0301000','job030100','N','Y');" target="mainFrame">인재상</a></li>
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0302000','job030200','N','Y');" target="mainFrame">인재육성</a></li>
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0303000','job030300','N','Y');" target="mainFrame">직무소개</a></li>
+                           
+                 
+				
+                       </ul>
+                   </div>
+               </li>
+               
+               
+               
+			
+				
+          		<li class=""><a href="javascript:menuGo('JOB0401000','job040100','N','N')" target="mainFrame">채용문의</a>
+               		<div class="depth_box box1">
+                       <ul class="sub_meun">
+                           
+                
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0401000','job040100','N','N');" target="mainFrame">공지사항</a></li>
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0402000','job040200','N','N');" target="mainFrame">자주하는 질문(FAQ)</a></li>
+                           
+                 
+				
+               
+               
+			
+				           
+                
+                			
+                           <li><a href="javascript:menuGo('JOB0403000','job040300','N','N');" target="mainFrame">공개채용 문의</a></li>
+                           
+                 
+				
+                       </ul>
+                   </div>
+               </li>
+               
+               
+               
+           </ul>
+       </div><!-- //공시채용 gnb -->
+     
+   </div><!--// header div -->
+   
+   
+   <!-- HEADER e -->
+
+    	
+        <!-- top e -->
+        <hr />
+        
+        <div id="container" class="subpage layout2">
+            <!-- left s -->
+			
+<div id="lnb">
+	<div class="lnbmu">
+		<div class="lnbtit">
+         		<strong  id="depth3Title">
+         		
+				
+				
+				
+				
+				
+				
+				
+						입사지원관리
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+         		</strong>
+		</div><!--// lnbtit div -->
+		
+		<ul class="menu3dep">
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<li class="on">
+				<ul class="menu4dep">
+			
+			
+			
+			
+			
+			
+					
+					<li class=""><a class="" href="javascript:menuGo('JOB0201000','job020100','N','N');" target="mainFrame" title="지원서 작성"><span>지원서 작성</span></a></li>
+			
+			
+			
+			
+					
+					<li class=""><a class="" href="javascript:menuGo('JOB0202000','job020200','N','N');" target="mainFrame" title="지원서 수정·삭제"><span>지원서 수정·삭제</span></a></li>
+			
+			
+			
+			
+					
+					<li class="on"><a class="on" href="javascript:menuGo('JOB0203000','job020300','N','N');" target="mainFrame" title="전형결과 확인"><span>전형결과 확인</span></a></li>
+			
+			
+			
+			
+					
+					<li class=""><a class="" href="javascript:menuGo('JOB0701000','job070100','N','N');" target="mainFrame" title="채용서류 반환 청구"><span>채용서류 반환 청구</span></a></li>
+			
+			
+			
+			
+					
+					<li class=""><a class="" href="javascript:menu_exipt_go('JOB0205010','JOB0205010','N','N');" target="mainFrame" title="이의신청"><span>이의신청</span></a></li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				</ul>
+			</li>
+
+
+		</ul>
+	</div><!--// lnbmu div -->
+    <!-- relative content1 s -->
+           
+	<dl class="lnb_reldsc" id="utilServiceCont" style="display:none;">
+		<dt><strong id="utilServiceTitle"></strong></dt>
+    	<dd>
+	    	
+    	</dd>
+	</dl>
+                
+                <!--// relative content1 e -->
+</div><!--// lnbmu div -->
+
+
+
+
+
+
+            <hr />
+            
+            <div id="content">
+            <!-- 본문 s -->
+                
+                
+<div class="title">
+    <div id="location" class="lcmap">
+	    <a href="javascript:menuGo('MAIN','main','N','N');" class="ico_home"><span>처음으로</span></a>
+	    <a href="javascript:menuGo('MAIN','main','N','N');">공개채용</a>
+	    
+		    <a href="javascript:menuGo('JOB0201000','job020100','N','N')">입사지원관리</a>
+		    <span>전형결과 확인</span>
+	    
+    </div>
+    <h1 id="subtitle" class="h1tit">전형결과 확인</h1>
+    <!-- <div class="page_util">복사 | 메일보내기 | PDF다운 | SNS</div> -->
+</div><!--// title div -->
+                                
+                <!-- 개발영역 s -->
+                <form id="appForm" name="appForm" method="post" action="">
+                
+                <!-- 알림박스 s -->
+                <div class="box_info box_info_list">
+                    <span class="round top_left">&nbsp;</span>
+                    <span class="round top_right">&nbsp;</span>
+                    <span class="round bottom_left">&nbsp;</span>
+                    <span class="round bottom_right">&nbsp;</span>
+                    <dl class="wrap_desc info_desc">
+                        <dt>전형결과확인을 위해 지원자 정보를 확인합니다.</dt>
+                        <dd>
+                            <ul class="bul_5dep_list">
+                                <li>현재 진행중인 전형결과 발표 목록입니다. </li>
+                        		<li>결과확인을 클릭하시면 합격여부를 확인하실 수 있습니다.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>              
+                <!--// 알림박스 e -->
+                
+                <div class="conSection">      
+                	
+                    <!-- bbs_box s -->        
+                    <div class="bbs_box">
+                        <div class="bbs_list">
+                            <table class="list" summary="구분, 채용공고, 발표단계, 발표시작일시, 발표종료일시, 결과확인을 포함한 전형결과 목록입니다">
+                                <caption>전형결과 확인 게시판</caption>
+                                <colgroup>
+                                    <col width="18%" />
+                                    <col width="*" />
+                                    <col width="15%" />
+                                    <col width="13%" />
+                                    <col width="13%" />
+                                    <col width="13%" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">채용공고</th>
+                                        <th scope="col">발표단계</th>
+                                        <th scope="col">발표시작일시</th>
+                                        <th scope="col">발표종료일시</th>
+                                        <th scope="col">결과확인</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                    <tr>
+                                        <th scope="row">
+                                        	<div class="td_cont">
+                                        		
+                                        		전문인력채용
+
+                                        	</div>
+
+                                        </th>
+                                       	<td class="tit">
+                                        	<div class="td_cont">
+                                        		2019년도 2차 연구직 직원 채용공고
+                                        	</div>
+                                        </td>
+                                        
+										
+										<td><div class="td_cont">서류전형<br />									
+										발표중
+										</div></td>
+
+										
+
+
+                                        <td><div class="td_cont">2019.05.28 17:00</div></td>
+                                        <td><div class="td_cont">2019.06.12 18:00</div></td>
+										<td><div class="td_cont">
+
+
+											
+											<a href="#" onclick="fncGoPassResult('2019','A','2', '서류전형');" class="btn_set btnSv"><span>확인</span></a>
+											
+									
+
+										</div></td>
+										
+
+                                    </tr>
+                                
+                                    <tr>
+                                        <th scope="row">
+                                        	<div class="td_cont">
+                                        		
+                                        		공개채용(대졸)
+
+                                        	</div>
+
+                                        </th>
+                                       	<td class="tit">
+                                        	<div class="td_cont">
+                                        		2019년도 상반기 대졸수준 신입사원 공개채용
+                                        	</div>
+                                        </td>
+                                        
+										
+										<td><div class="td_cont">직무면접<br />									
+										발표중
+										</div></td>
+
+										
+
+
+                                        <td><div class="td_cont">2019.05.23 17:00</div></td>
+                                        <td><div class="td_cont">2019.06.04 18:00</div></td>
+										<td><div class="td_cont">
+
+
+											
+											<a href="Login.html" onclick="fncGoPassResult('2019','1','1', '직무면접');" class="btn_set btnSv"><span>확인</span></a>
+											
+									
+
+										</div></td>
+										
+
+                                    </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div> <!--// bbs_list div -->
+                            
+                    </div><!-- // bbs_box e -->
+                    <div class="btn_bbs board_align">
+                    <!--   
+                    	<div class="area_right">
+                        	<a href="#" class="btn_set btnGy"><span>지원서 작성</span></a>
+						</div>
+					-->
+					</div>
+                </div> <!--// conSection div -->
+                 <!-- D : 하단에 항시 고정 -->
+                
+                	
+				<!-- param s -->
+					
+
+
+        <input type="hidden" id="method"        name="method" />
+		<input type="hidden" id="txCode"        name="txCode" />
+		<input type="hidden" id="forward"       name="forward" />
+		<input type="hidden" id="sessionCheck"  name="sessionCheck"  value="N" />
+		<input type="hidden" id="action_return" name="action_return" value="N" />
+		
+		<input type="hidden" id="txCodePrev"        name="txCodePrev" value=""/>
+		<input type="hidden" id="forwardPrev"       name="forwardPrev" value=""/>
+		<input type="hidden" id="sessionCheckPrev"  name="sessionCheckPrev"  value=""/>
+		<input type="hidden" id="action_returnPrev" name="action_returnPrev" value=""/>
+		
+		
+
+					
+					<input type="hidden" id="employ_year" name="employ_year" />
+					<input type="hidden" id="employ_id"   name="employ_id" />
+					<input type="hidden" id="employ_seq"  name="employ_seq" />
+					<input type="hidden" id="passLvl"  name="passLvl" />
+				<!-- param e -->
+				</form>
+				
+                <!-- 개발영역 e -->
+			<!-- 본문 e -->   
+            </div><!--// content div -->
+        </div><!--// container div -->
+        
+        <hr />
+        <!-- footer s -->
+        
+<div id="footer">
+            	<div class="footerCon">
+                	<p class="logo is_footer"><span>KEPCO</span></p>
+                    <div class="footer_dsc">
+                    	<ul class="util_menu">
+                        	<li><a href="#" onclick="fncPrivate('1');" title="개인정보처리방침(팝업열림)">개인정보처리방침 </a></li>
+                        	<li><a href="http://cyber.kepco.co.kr/kepco/CU/G/C/CUGCPP00101.do?menuCd=FN120403&amp;siteDivn=recruit" target="_blank" title="개인정보침해신고(팝업열림)">개인정보침해신고</a></li>  
+                        	<!--li><a href="#" onclick="fncPrivate('3');">신용정보활용체제공시</a></li-->
+                        	<li><a href="#" onclick="fncPrivate('5');" title="법적고지(팝업열림)">법적고지</a></li>
+                        	<li><a href="#" onclick="fncPrivate('4');" title="이메일주소무단수집금지(팝업열림)">이메일주소무단수집금지</a></li>
+                        	<!-- <li><a href="#" onclick="fncGoHomepageResearch();">홈페이지 개선의견</a></li> -->
+                            <!-- <li class="family">
+                            	<a href="#footer" title="FAMILY SITE"><span>FAMILY SITE</span></a>
+                                <dl class="family_site">
+                                	<dt><strong>전력그룹사</strong></dt>
+                                    <dd>
+                                    	<ul>
+                                        	<li><a href="http://www.khnp.co.kr" target="_blank">한국수력원자력(주)</a></li>
+                                        	<li><a href="https://www.kosep.co.kr" target="_blank">한국남동발전(주)</a></li>
+                                        	<li><a href="https://www.komipo.co.kr" target="_blank">한국중부발전(주)</a></li>
+                                        	<li><a href="http://www.westernpower.co.kr" target="_blank">한국서부발전(주)</a></li>
+                                        	<li><a href="http://www.kospo.co.kr/" target="_blank">한국남부발전(주)</a></li>
+                                        	<li><a href="http://www.ewp.co.kr" target="_blank">한국동서발전(주)</a></li>
+                                        	<li><a href="https://www.kdn.com/" target="_blank">한전KDN(주)</a></li>
+                                        	<li><a href="http://www.kopec.co.kr" target="_blank">한국전력기술(주)</a></li>
+                                        	<li><a href="http://www.kps.co.kr" target="_blank">한국KPS(주)</a></li>
+                                        	<li><a href="http://www.knfc.co.kr/" target="_blank">한전원자력연료(주)</a></li>
+                                        	<li><a href="http://www.kepid.co.kr" target="_blank">한국산업개발(주)</a></li>
+                                            <li><a href="http://www.kepcomedi.co.kr" target="_blank">한전병원</a></li>
+                                        </ul>
+                                    </dd>
+                                    <dt><strong>관련사이트</strong></dt>
+                                    <dd>
+                                    	<ul>
+                                        	<li><a href="http://www.kepri.re.kr/" target="_blank">전력연구원</a></li>
+                                            <li><a href="http://edu.kepco.co.kr/" target="_blank">인재개발원</a></li>
+                                            <li><a href="http://www.kepco.co.kr/art/" target="_blank">한전아트센터</a></li>
+                                            <li><a href="http://sports.kepco.co.kr/" target="_blank">KEPCO스포츠단</a></li>
+                                            <li><a href="http://www.kepco.co.kr/obkepco/" target="_blank">전우회</a></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>-->
+                        </ul>
+                        <div class="footer_info">
+                        	<p class="is_footer qrcode"><a href="http://home.kepco.co.kr/kepco/main.do" title="kepco qr code(한전전력공사 모바일 사이트로 이동)"><span>KEPCO QR CODE</span></a></p>
+                            <ul>
+                            	<!-- <li><strong class="is_footer emphone"><span>24시간 전기상담고객센터(전기상담, 고장신고) 국번없이 123 (휴대폰 지역번호 + 123) <a href="#" onclick="alert('서비스 준비중입니다.');">ARS 안내</a></span></strong></li> -->
+                            	<li>
+                                	<address>(우)58217 전라남도 나주시 전력로 55(빛가람동)</address>
+                                    <!-- <span>COPYRIGHTⓒ2013 KEPCO CORP. ALLRIGHTS RESERVED</span> -->
+                                </li>
+                            	<li class="phonesns">
+                            		<span>COPYRIGHTⓒ2013 KEPCO CORP. ALLRIGHTS RESERVED</span>
+                                	<!-- <span>대표 : <strong>02-3456-3114</strong></span>
+                                    <span>야간 : <strong>02-3456-3203</strong></span> --> 
+                                    <span class="sns">
+                                    	<a href="https://twitter.com/kepco_recruit" target="_blank" class="sns_t2" title="한전채용 twitter 새창열림"><span>twitter</span></a>
+                                    	<a href="https://twitter.com/iamkepco" target="_blank" class="sns_t" title="한전공식 twitter 새창열림"><span>twitter</span></a>
+                                        <a href="http://www.facebook.com/iamkepco" target="_blank" class="sns_f" title="한전공식 facebook 새창열림"><span>facebook</span></a>
+                                        <!--a href="http://me2day.net/iamkepco" target="_blank" class="sns_m" title="한전공식 me2day 새창열림"><span>me2day</span></a-->
+                                        <!-- <a href="http://cyber.kepco.co.kr/kepco/rss/rssPop.do" onclick="open_window('rssPop', this.href, '519', '700', '', '', '', 'yes', 'yes'); return false;" target="_blank" class="sns_r" title="rss"><span>rss</span></a> -->
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!--// footer_dsc div -->
+                
+                </div><!--// footerCon div -->
+        </div><!--// footer div -->
+		<script type="text/javascript">
+			$(".tab_layer > li.on > a").attr("title","현재페이지");
+			$(".sub_layer li.sub_on a").attr("title","선택됨");
+			/*$(window).load(function(){
+				var title = $("#subtitle").html();
+				
+					if(title.length >0){
+						parent.document.title = title + " | KEPCO 채용";
+					}
+			});*/
+		</script>
+        <!-- footer e -->
+        
+	</div><!--// inbox div -->
+</div><!--// wrapGuide div -->
+</body>
+
+</html>
