@@ -1,37 +1,62 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/leaf4u06/kepco/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/leaf4u06/kepco/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<http>
+	<headers defaults-disabled="true">
+		<content-type-options/>
+		<xss-protection block="false"/>
+		<content-security-policy policy-directives="script-src 'self';">
+	</headers>
+</http>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=euc_kr" />
+		<title>KEPCO 채용</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		<script  type="text/javascript" src="https://recruit.kepco.co.kr:444/js/common.js"></script>
+		<script type="text/javascript" src="https://recruit.kepco.co.kr:444/front/com/js/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+  function isMobile() {
+    var filter = "win16|win32|win64|mac|macintel";
+    if( navigator.platform  ){
+      if( filter.indexOf(navigator.platform.toLowerCase())<0 ){
+        return true;
+      }else{
+        return false;
+      }
+    }
+  }
+
+  </script>
+
+	</head>
+
+	<frameset rows="0,*" frameborder="0" border="0" framespacing="0">
+		<frame src="about:blank" name="hiddenFrame" scrolling="no" noresize title="빈프레임"/>
+		<frame src="MainFrame/MainFrame.html" name="mainFrame" id="mainFrame" title="컨텐츠영역"/>
+	</frameset>
+	<body></body>
+ </html>
